@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>人间烟火 - 人间有味是清欢</title><meta name="description" content="星沉海底当窗见，雨过河源隔座看"><meta name="keywords" content="GNSS,生活,代码,博客,旅行"><meta name="author" content="WhuerJiande,jiande@yahoo.com"><meta name="copyright" content="WhuerJiande"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.jiande.bio/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="人间烟火"><meta property="og:url" content="https://www.jiande.bio/page/2/"><meta property="og:site_name" content="人间烟火"><meta property="og:description" content="星沉海底当窗见，雨过河源隔座看"><meta property="og:image" content="https://www.jiande.bio/myIMG/night.jpg"><meta property="article:published_time" content="2020-09-06T07:58:28.541Z"><meta property="article:modified_time" content="2020-09-06T07:58:28.541Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime: '天',
+  date_suffix: {"one_hour":"刚刚","hours":"小时前","day":"天前"},
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+    },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-09-06 15:58:28'
+}</script><noscript><style type="text/css">
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+  }
+}
+
+var autoChangeMode = 'false'
+var t = saveToLocal.get('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (saveToLocal.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="人间烟火" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/myIMG/night.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">33</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">42</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 总览</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><header class="full_page" id="page-header" style="background-image: url(/myIMG/home.JPG)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">人间烟火</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 总览</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">人间烟火</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/hjiande" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1141916401@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/05/GNSS-ITRS-GCRS-J2000%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" title="ITRS/GCRS/J2000坐标系的相互转换">     <img class="post_bg" data-lazy-src="/myIMG/img/41.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ITRS/GCRS/J2000坐标系的相互转换"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/05/GNSS-ITRS-GCRS-J2000%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" title="ITRS/GCRS/J2000坐标系的相互转换">ITRS/GCRS/J2000坐标系的相互转换</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-05T02:18:49.000Z" title="发表于 2020-08-05 10:18:49">2020-08-05</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.445Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/GNSS/">GNSS</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/GNSS/ITRS-GCRS-J2000/">ITRS/GCRS/J2000</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/GNSS/">GNSS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/ITRS/">ITRS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/GCRS/">GCRS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/J2000/">J2000</a></span></div><div class="content"> 背景
+
+转载自：https://blog.csdn.net/u011575168/article/details/52081409
+
+本文主要阐述了目前国际天文界最新规定的岁差章动模型(IAU 2000A/B)，并根据此模型给出ITRS,GCRS和  J2000平赤道地心系相互转换的详细步骤。
+本文主要依据《IERS Conventions 2003》(IERS Technical Note No.  32)而来，由于文章为英文，且详细叙述了ITRS,GCRS参考系以及岁差章动等模型，会使得读者初次阅读（或天文背景知识不够）产生阅读障碍。笔者也是在多次反复阅读的基础上并参考其它书籍和文献才稍微弄清楚，因此本文是笔者关于此文献的一个总结，希望能够对读者有所帮助。
+本文不打算对坐标系转换的理论（岁差章动，极移等）进行详细讲解，仅仅给出坐标转换的基本步骤和必要常识，以便读者根据此文能够迅速掌握ITRS,GCRS和J2000平赤道地心系相互转换的基本原理，并能够依据IERS提供的Fortran源程序进行实际编程应用。
+ 前言
+ 名词缩写和解释
+
+
+
+
+缩写
+全称
+
+
+
+
+BCRS
+baryc ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/05/macOS-Homebrew%E7%AE%80%E4%BB%8B%E5%92%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="Homebrew简介和基本使用">     <img class="post_bg" data-lazy-src="/myIMG/img/39.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Homebrew简介和基本使用"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/05/macOS-Homebrew%E7%AE%80%E4%BB%8B%E5%92%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="Homebrew简介和基本使用">Homebrew简介和基本使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-05T02:04:28.000Z" title="发表于 2020-08-05 10:04:28">2020-08-05</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.474Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/macOS/">macOS</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/macOS/Homebrew/">Homebrew</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/macOS/">macOS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Homebrew/">Homebrew</a></span></div><div class="content"> Homebrew
+Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。
+援引官方的一句话：又提示缺少套件啦？别担心，Homebrew 随时守候。Homebrew – OS X 不可或缺的套件管理器。
+
+官网地址
+
+
+ Homebrew安装
+ 要求
+
+
+Intel CPU
+
+
+OS X 10.9 or higher
+
+
+支持shell (sh或者bash)
+
+
+Xcode命令行工具
+
+
+1xcode-select --install
+ 安装和卸载
+ 安装
+1/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+ 卸载
+1234567cd `brew --prefix`rm -rf Cellarbrew prunerm `git ls-files`rm -r Library/Homebr ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/05/%E5%B7%A5%E5%85%B7-SublimeText%E4%B8%BB%E9%A2%98/" title="9个最佳的Sublime Text主题">     <img class="post_bg" data-lazy-src="/myIMG/img/37.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="9个最佳的Sublime Text主题"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/05/%E5%B7%A5%E5%85%B7-SublimeText%E4%B8%BB%E9%A2%98/" title="9个最佳的Sublime Text主题">9个最佳的Sublime Text主题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-05T01:41:59.000Z" title="发表于 2020-08-05 09:41:59">2020-08-05</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.477Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/%E7%BC%96%E7%A8%8B/Sublime-Text/">Sublime Text</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/%E7%BC%96%E7%A8%8B/">编程</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Sublime-Text/">Sublime Text</a></span></div><div class="content"> 背景
+Sublime Text 是一个轻量、简洁、高效、跨平台的编辑器。有些人会认为变更Sublime Text的皮肤是一件浪费时间的事情，但也许你没想过，一个漂亮的主题会提高你的工作效率。下面这9款主题都能让你的编辑器里的代码具有不同的配色效果。
+
+中文官网
+
+
+ Sublime Text特性
+ Goto Anything
+使用 Goto Anything 只需几个按键即可打开文件，并立即跳转到符号，行或单词。
+使用快捷键 Ctrl+P , 可以:
+
+输入部分文件名即可将其打开。
+输入 @ 跳转到符号， 输入# 可以在文件中搜索， 输入 : 可以跳转到指定行。
+
+这些快捷方式可以组合使用, 输入tp@rf 可能会打开text_parser.py这个文件，并定位到 read_file 函数. 同样，tp:100 会将您带到同一文件的第100行。
+ 多重选择（Multiple Selections）
+多重选择可以同时对N处更改，轻松重命名变量，以前所未有的速度操作文件。
+Ctrl+Shift+L将选区分为行， Ctrl+D 选择下一个被选中的单词。 要使用鼠标进行多项选择，请查看 列选 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/03/hexo-latex-katex-%E6%89%8B%E5%86%8C/" title="Latex/MathJax/Katex数学公式手册">     <img class="post_bg" data-lazy-src="/myIMG/img/35.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Latex/MathJax/Katex数学公式手册"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/03/hexo-latex-katex-%E6%89%8B%E5%86%8C/" title="Latex/MathJax/Katex数学公式手册">Latex/MathJax/Katex数学公式手册</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-03T07:16:16.000Z" title="发表于 2020-08-03 15:16:16">2020-08-03</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.461Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/hexo/">hexo</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/hexo/Latex-MathJax-Katex/">Latex/MathJax/Katex</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/hexo/">hexo</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Latex/">Latex</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/MathJax/">MathJax</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Katex/">Katex</a></span></div><div class="content"> Latex/MathJax/Katex数学公式手册
+ LaTeX
+LaTeX（LATEX，音译“拉泰赫”）是一种基于ΤΕΧ的排版系统，由美国计算机学家莱斯利·兰伯特（Leslie Lamport）在20世纪80年代初期开发，利用这种格式，即使使用者没有排版和程序设计的知识也可以充分发挥由TeX所提供的强大功能，能在几天、甚至几小时内生成很多具有书籍质量的印刷品。对于生成复杂表格和数学公式，这一点表现得尤为突出。因此它非常适用于生成高印刷质量的科技和数学类文档。这个系统同样适用于生成从简单的信件到完整书籍的所有其他种类的文档。
+ MathJax
+MathJax 是一个开源的基于 Ajax 的数学公式显示的解决方案，结合多种先进的Web技术，支持主流的浏览器。MathJax 根据页面中定义的 LaTex 数据，生成对应的数学公式。
+ Katex
+KaTeX 是一个快速，为网站呈现 Tex 科学公式 的简单易用的 javascript 库。
+ 希腊字母
+
+
+
+字母
+Latex
+字母
+Latex
+字母
+Latex
+字母
+Latex
+
+
+
+
+
+\alpha
+
+\theta
+
+o
+
+\tau
+
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/03/GNSS-POD-%E5%AF%BC%E8%88%AA%E5%8D%AB%E6%98%9F%E5%8F%97%E5%8A%9B%E5%88%86%E6%9E%90/" title="17-POD-导航卫星受力分析">     <img class="post_bg" data-lazy-src="/myIMG/img/33.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="17-POD-导航卫星受力分析"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/03/GNSS-POD-%E5%AF%BC%E8%88%AA%E5%8D%AB%E6%98%9F%E5%8F%97%E5%8A%9B%E5%88%86%E6%9E%90/" title="17-POD-导航卫星受力分析">17-POD-导航卫星受力分析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-03T02:15:51.000Z" title="发表于 2020-08-03 10:15:51">2020-08-03</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.447Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/GNSS/">GNSS</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/GNSS/POD/">POD</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/GNSS/">GNSS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/POD/">POD</a></span></div><div class="content"> 背景
+本文主要节选于作者的本科毕业设计，并对其进行了进一步的更新整理。
+ 导航卫星受力分析
+导航卫星所受的作用力除了受到地球中心引力外，还有其他摄动力，包括地球非球形引力、大气阻力、日月引力、太阳辐射压、地球潮汐等。卫星的受力方程可表示为：
+{ft=f(t,r,r˙,p)=fc+fncfnc=fg+fng+fempfg=fns+fnb+fst+fot+fat+frd+frefng=fad+fsr+fer\left\{\begin{array}{l}f_t=f(t,r,\dot r,p)=f_c+f_{nc}\\f_{nc}=f_g+f_{ng}+f_{emp}\\f_g=f_{ns}+f_{nb}+f_{st}+f_{ot}+f_{at}+f_{rd}+f_{re}\\f_{ng}=f_{ad}+f_{sr}+f_{er}\end{array}\right.
+⎩⎪⎪⎨⎪⎪⎧​ft​=f(t,r,r˙,p)=fc​+fnc​fnc​=fg​+fng​+femp​fg​=fns​+fnb​+fst​+fot​+fat​+frd​+fre​fng​=fad​+fsr​+fer​​
+式中：
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/01/GNSS-GNSS%E5%8E%9F%E7%90%86-%E5%B9%BF%E6%92%AD%E6%98%9F%E5%8E%86/" title="面试-GNSS原理-广播星历">     <img class="post_bg" data-lazy-src="/myIMG/img/31.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面试-GNSS原理-广播星历"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/01/GNSS-GNSS%E5%8E%9F%E7%90%86-%E5%B9%BF%E6%92%AD%E6%98%9F%E5%8E%86/" title="面试-GNSS原理-广播星历">面试-GNSS原理-广播星历</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-01T09:58:53.000Z" title="发表于 2020-08-01 17:58:53">2020-08-01</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.413Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/GNSS/">GNSS</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/GNSS/%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/">原理与应用</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/GNSS/">GNSS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%B7%A5%E4%BD%9C%E9%9D%A2%E8%AF%95/">工作面试</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AF%95/">工作笔试</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/01/GNSS-GNSS%E5%8E%9F%E7%90%86-%E7%BB%AA%E8%AE%BA/" title="面试-GNSS原理-GNSS简介">     <img class="post_bg" data-lazy-src="/myIMG/img/29.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面试-GNSS原理-GNSS简介"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/01/GNSS-GNSS%E5%8E%9F%E7%90%86-%E7%BB%AA%E8%AE%BA/" title="面试-GNSS原理-GNSS简介">面试-GNSS原理-GNSS简介</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-01T03:10:54.000Z" title="发表于 2020-08-01 11:10:54">2020-08-01</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.413Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/GNSS/">GNSS</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/GNSS/%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/">原理与应用</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/GNSS/">GNSS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%B7%A5%E4%BD%9C%E9%9D%A2%E8%AF%95/">工作面试</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AF%95/">工作笔试</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/GPS/">GPS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/BDS/">BDS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/Galileo/">Galileo</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/GLONASS/">GLONASS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/QZSS/">QZSS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/IRNSS/">IRNSS</a></span></div><div class="content"> 一、GNSS星座
+具有全球导航定位能力的卫星导航定位系统称为全球卫星导航系统，英文全称为Global Navigation Satellite System，简称为GNSS。
+现有全球卫星导航定位系统
+
+ GPS
+GPS是英文**Global Positioning System（全球定位系统）**的简称。GPS起始于1958年美国军方的一个项目，1964年投入使用。20世纪70年代，美国陆海空三军联合研制了新一代卫星定位系统GPS 。主要目的是为陆海空三大领域提供实时、全天候和全球性的导航服务，并用于情报搜集、核爆监测和应急通讯等一些军事目的，经过20余年的研究实验，耗资300亿美元，到1994年，全球覆盖率高达98%的24颗GPS卫星星座己布设完成。
+ GPS卫星
+ Block Ⅰ
+系统试验卫星。
+
+ Block Ⅱ
+正式卫星，存储星历能力为14天，具有SA和AS能力。
+
+ Block ⅡA
+Block Ⅱ的改进型号，A为（Advanced）之意。卫星间可相互通讯，存储星历能力为180天，SV35和SV36带有激光反射棱镜。
+
+ Block ⅡR
+加入了星间链路早期试验，R即为（ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/08/01/GNSS-%E6%94%B6%E8%97%8F-%E5%8C%97%E6%96%97%E4%B8%89%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%9F%9F%E7%9F%AD%E6%8A%A5%E6%96%87%E9%80%9A%E4%BF%A1%E6%9C%8D%E5%8A%A1/" title="收藏 - 北斗三号的区域短报文通信服务">     <img class="post_bg" data-lazy-src="/myIMG/img/27.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="收藏 - 北斗三号的区域短报文通信服务"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/01/GNSS-%E6%94%B6%E8%97%8F-%E5%8C%97%E6%96%97%E4%B8%89%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%9F%9F%E7%9F%AD%E6%8A%A5%E6%96%87%E9%80%9A%E4%BF%A1%E6%9C%8D%E5%8A%A1/" title="收藏 - 北斗三号的区域短报文通信服务">收藏 - 北斗三号的区域短报文通信服务</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-01T02:43:49.000Z" title="发表于 2020-08-01 10:43:49">2020-08-01</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.456Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/GNSS/">GNSS</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/GNSS/%E6%94%B6%E8%97%8F/">收藏</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/GNSS/">GNSS</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/BDS-3/">BDS-3</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E6%94%B6%E8%97%8F/">收藏</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E7%9F%AD%E6%8A%A5%E6%96%87/">短报文</a></span></div><div class="content">
+原文地址
+
+ 背景
+北斗三号短报文通信是北斗三号系统最具特色的服务，具备位置报告、应急搜救以及报文通信三种基本服务，相较于北斗二号，服务性能得到大幅提升，可面向我国及周边用户提供更优质的服务。为便于对北斗三号短报文服务的理解，本文从短报文发展、技术体制、运行服务以及应用发展四个方面进行简要介绍。
+ 一、基本情况
+**北斗短报文发展情况。**北斗短报文通信服务一直是北斗系统最大特色。2003年以来，从北斗一号开始，北斗就采用基于RDSS体制为用户提供短报文通信服务，北斗二号仍然继承了这一体制和服务，目前在役提供服务。注册用户数近50万，在渔船和海上应用是这一服务发展最好的领域，绝大部分用户使用短报文通信服务。
+**北斗三号短报文总体情况。**北斗三号在兼容RDSS体制的基础上，利用3颗GEO卫星，创新采用广义RDSS体制和RNSS＋短报文通信体制，精化了服务类型设计，优化了运行模式设计，极大提升了系统性能和用户体验，向规模化、国际化和高质量方向发展。目前已完成卫星和地面系统建设部署，即将开通服务。
+ 二、丰富拓展技术体制
+ （一）广义RDSS体制
+
+**基本原理。**用户机接收一颗GE ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/28/C-Newmat-%E6%8C%87%E5%8C%97/" title="C++ Newmat矩阵库 下载、安装和指北">     <img class="post_bg" data-lazy-src="/myIMG/img/25.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C++ Newmat矩阵库 下载、安装和指北"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/28/C-Newmat-%E6%8C%87%E5%8C%97/" title="C++ Newmat矩阵库 下载、安装和指北">C++ Newmat矩阵库 下载、安装和指北</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-07-28T13:26:10.000Z" title="发表于 2020-07-28 21:26:10">2020-07-28</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.387Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/C/">C++</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/C/newmat/">newmat</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/C/">C++</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E7%BC%96%E7%A8%8B/">编程</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/newmat/">newmat</a></span></div><div class="content"> 背景
+该软件包适用于需要使用标准矩阵运算来处理各种类型矩阵的科学家和工程师。重点在于统计计算所需的运算类型，例如最小二乘法，线性方程求解和特征值。
+本人在做GNSS开发过程中，使用的三方矩阵库为Newmat和Eigen，其中Newmat因为使用的人较少，比较小众，网络上能找到的简单介绍更是基本上没有。因此在这里对Newmat矩阵库做一个简单的介绍。
+更多用法还是要看官方文档：
+
+官方文档
+
+ 支持的矩阵类型
+
+
+
+Matrix
+矩阵
+
+
+
+
+Matrix
+矩形矩阵
+
+
+UpperTriangularMatrix
+上三角矩阵
+
+
+LowerTriangularMatrix
+下三角矩阵
+
+
+DiagonalMatrix
+对角矩阵
+
+
+SymmetricMatrix
+对称矩阵
+
+
+BandMatrix
+带矩阵
+
+
+UpperBandMatrix
+上三角带矩阵
+
+
+LowerBandMatrix
+下三角带矩阵
+
+
+SymmetricBandMatrix
+对称带矩阵
+
+
+RowVector
+行矩阵
+
+
+ColumnVector
+列矩阵
+
+
+IdentityMatrix
+具有相同值的对角矩阵
+
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/27/C-CMake-%E6%8C%87%E5%8C%97/" title="CMake 软件下载、安装和指北">     <img class="post_bg" data-lazy-src="/myIMG/img/23.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CMake 软件下载、安装和指北"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/27/C-CMake-%E6%8C%87%E5%8C%97/" title="CMake 软件下载、安装和指北">CMake 软件下载、安装和指北</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-07-27T09:25:57.000Z" title="发表于 2020-07-27 17:25:57">2020-07-27</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.381Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/C/">C++</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/C/CMake/">CMake</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/tags/C/">C++</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/CMake/">CMake</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/tags/%E7%BC%96%E7%A8%8B/">编程</a></span></div><div class="content"> 背景
+CMake是个一个开源的跨平台自动化建构系统，用来管理软件建置的程序，并不相依于某特定编译器。
+并可支持多层目录、多个应用程序与多个库。 它用配置文件控制建构过程（build process）的方式和Unix的make相似，只是CMake的配置文件取名为CMakeLists.txt。
+CMake并不直接建构出最终的软件，而是产生标准的建构档（如Unix的Makefile或Windows Visual C++的projects/workspaces），然后再依一般的建构方式使用。
+这使得熟悉某个集成开发环境（IDE）的开发者可以用标准的方式建构他的软件，这种可以使用各平台的原生建构系统的能力是CMake和SCons等其他类似系统的区别之处。
+它首先允许开发者编写一种平台无关的CMakeList.txt 文件来定制整个编译流程，然后再根据目标用户的平台进一步生成所需的本地化 Makefile 和工程文件，如 Unix的 Makefile 或 Windows 的 Visual Studio 工程。从而做到“Write once, run everywhere”。显然，CMake 是一 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/myIMG/night.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">WhuerJiande</div><div class="author-info__description">星沉海底当窗见，雨过河源隔座看</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length_num">33</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length_num">42</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length_num">28</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/hjiande" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1141916401@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="sticky_layout"><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2020/09/05/hello-world/" title="Hello World"><img data-lazy-src="/myIMG/home2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2020/09/05/hello-world/" title="Hello World">Hello World</a><time datetime="2020-09-05T12:12:19.854Z" title="发表于 2020-09-05 20:12:19">2020-09-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/06/%E5%B7%A5%E5%85%B7-%E8%AF%AD%E6%B3%95%E7%9D%80%E8%89%B2%E5%B7%A5%E5%85%B7Highlight/" title="工具-语法着色工具Highlight"><img data-lazy-src="/myIMG/home2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="工具-语法着色工具Highlight"/></a><div class="content"><a class="title" href="/2020/08/06/%E5%B7%A5%E5%85%B7-%E8%AF%AD%E6%B3%95%E7%9D%80%E8%89%B2%E5%B7%A5%E5%85%B7Highlight/" title="工具-语法着色工具Highlight">工具-语法着色工具Highlight</a><time datetime="2020-08-06T01:39:41.000Z" title="发表于 2020-08-06 09:39:41">2020-08-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/06/python-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8Fre%E6%A8%A1%E5%9D%97/" title="python中的正则表达式（re模块）"><img data-lazy-src="/myIMG/home2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python中的正则表达式（re模块）"/></a><div class="content"><a class="title" href="/2020/08/06/python-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8Fre%E6%A8%A1%E5%9D%97/" title="python中的正则表达式（re模块）">python中的正则表达式（re模块）</a><time datetime="2020-08-06T01:24:23.000Z" title="发表于 2020-08-06 09:24:23">2020-08-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/06/C-vscode-%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="C-vscode-实时同步代码到远程服务器"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C-vscode-实时同步代码到远程服务器"/></a><div class="content"><a class="title" href="/2020/08/06/C-vscode-%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="C-vscode-实时同步代码到远程服务器">C-vscode-实时同步代码到远程服务器</a><time datetime="2020-08-06T01:20:53.000Z" title="发表于 2020-08-06 09:20:53">2020-08-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/08/06/C-Doxygen%E7%AE%80%E6%98%8E%E6%B3%A8%E9%87%8A%E8%AF%AD%E6%B3%95/" title="C-Doxygen简明注释语法"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="C-Doxygen简明注释语法"/></a><div class="content"><a class="title" href="/2020/08/06/C-Doxygen%E7%AE%80%E6%98%8E%E6%B3%A8%E9%87%8A%E8%AF%AD%E6%B3%95/" title="C-Doxygen简明注释语法">C-Doxygen简明注释语法</a><time datetime="2020-08-06T00:32:26.000Z" title="发表于 2020-08-06 08:32:26">2020-08-06</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/"><span class="card-category-list-name">C++</span><span class="card-category-list-count">4</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/CMake/"><span class="card-category-list-name">CMake</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/newmat/"><span class="card-category-list-name">newmat</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/std-string/"><span class="card-category-list-name">std::string</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"><span class="card-category-list-name">代码规范</span><span class="card-category-list-count">1</span></a></li></ul><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/GNSS/"><span class="card-category-list-name">GNSS</span><span class="card-category-list-count">12</span></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/GNSS/Cartopy/"><span class="card-category-list-name">Cartopy</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/GNSS/ITRS-GCRS-J2000/"><span class="card-category-list-name">ITRS/GCRS/J2000</span><span class="card-category-list-count">1</span></a></li></ul>
+            <li class="card-category-list-item more is-center"><a class="card-category-list-link-more" href="/categories/">
+                <span>查看更多</span><i class="fas fa-angle-right"></i></a></li>
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href='/tags/BDS/' style='font-size:1.37em; color:rgb(123, 16, 101)'>BDS</a><a href='/tags/BDS-3/' style='font-size:1.19em; color:rgb(83, 42, 97)'>BDS-3</a><a href='/tags/C/' style='font-size:1.23em; color:rgb(14, 24, 57)'>C++</a><a href='/tags/CMake/' style='font-size:1.41em; color:rgb(9, 106, 0)'>CMake</a><a href='/tags/Cartopy/' style='font-size:1.36em; color:rgb(36, 30, 29)'>Cartopy</a><a href='/tags/ElementTree/' style='font-size:1.44em; color:rgb(50, 37, 69)'>ElementTree</a><a href='/tags/GCRS/' style='font-size:1.49em; color:rgb(172, 199, 164)'>GCRS</a><a href='/tags/GLONASS/' style='font-size:1.12em; color:rgb(40, 157, 17)'>GLONASS</a><a href='/tags/GNSS/' style='font-size:1.24em; color:rgb(30, 8, 169)'>GNSS</a><a href='/tags/GPS/' style='font-size:1.21em; color:rgb(0, 3, 82)'>GPS</a><a href='/tags/Galileo/' style='font-size:1.22em; color:rgb(117, 57, 9)'>Galileo</a><a href='/tags/Homebrew/' style='font-size:1.38em; color:rgb(13, 187, 129)'>Homebrew</a><a href='/tags/IRNSS/' style='font-size:1.34em; color:rgb(121, 47, 40)'>IRNSS</a><a href='/tags/ITRS/' style='font-size:1.24em; color:rgb(141, 67, 12)'>ITRS</a><a href='/tags/J2000/' style='font-size:1.12em; color:rgb(100, 44, 34)'>J2000</a><a href='/tags/KaTex/' style='font-size:1.37em; color:rgb(200, 46, 32)'>KaTex</a><a href='/tags/Katex/' style='font-size:1.47em; color:rgb(146, 199, 175)'>Katex</a><a href='/tags/LEO/' style='font-size:1.18em; color:rgb(186, 9, 192)'>LEO</a><a href='/tags/Latex/' style='font-size:1.10em; color:rgb(14, 70, 126)'>Latex</a><a href='/tags/MathJax/' style='font-size:1.45em; color:rgb(31, 189, 49)'>MathJax</a><a href='/tags/POD/' style='font-size:1.13em; color:rgb(129, 73, 169)'>POD</a><a href='/tags/Python/' style='font-size:1.39em; color:rgb(70, 121, 116)'>Python</a><a href='/tags/QZSS/' style='font-size:1.40em; color:rgb(162, 54, 120)'>QZSS</a><a href='/tags/RINEX/' style='font-size:1.30em; color:rgb(160, 128, 60)'>RINEX</a><a href='/tags/SINEX/' style='font-size:1.23em; color:rgb(107, 60, 34)'>SINEX</a><a href='/tags/Sublime-Text/' style='font-size:1.38em; color:rgb(135, 130, 125)'>Sublime Text</a><a href='/tags/Typora/' style='font-size:1.27em; color:rgb(12, 153, 75)'>Typora</a><a href='/tags/gfzrnx/' style='font-size:1.32em; color:rgb(153, 167, 167)'>gfzrnx</a><a href='/tags/hexo/' style='font-size:1.46em; color:rgb(50, 155, 116)'>hexo</a><a href='/tags/lxml/' style='font-size:1.27em; color:rgb(194, 161, 72)'>lxml</a><a href='/tags/macOS/' style='font-size:1.42em; color:rgb(23, 34, 110)'>macOS</a><a href='/tags/markdown/' style='font-size:1.22em; color:rgb(3, 107, 33)'>markdown</a><a href='/tags/newmat/' style='font-size:1.27em; color:rgb(110, 191, 154)'>newmat</a><a href='/tags/satellite/' style='font-size:1.20em; color:rgb(61, 173, 167)'>satellite</a><a href='/tags/xml/' style='font-size:1.32em; color:rgb(35, 112, 45)'>xml</a><a href='/tags/%E5%8D%9A%E5%AE%A2/' style='font-size:1.15em; color:rgb(112, 164, 127)'>博客</a><a href='/tags/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AF%95/' style='font-size:1.35em; color:rgb(109, 55, 41)'>工作笔试</a><a href='/tags/%E5%B7%A5%E4%BD%9C%E9%9D%A2%E8%AF%95/' style='font-size:1.34em; color:rgb(91, 182, 51)'>工作面试</a><a href='/tags/%E6%94%B6%E8%97%8F/' style='font-size:1.33em; color:rgb(104, 189, 62)'>收藏</a><a href='/tags/%E7%9F%AD%E6%8A%A5%E6%96%87/' style='font-size:1.45em; color:rgb(20, 48, 1)'>短报文</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">17</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">13</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">四月 2020</span><span class="card-archive-list-count">2</span></a></li></ul></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By WhuerJiande</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "人间有味是清欢,几时归去 作个闲人,若无闲事挂心头 便是人间好时节".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '人间有味是清欢'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>

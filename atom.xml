@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>人间烟火</title>
+  <icon>https://www.gravatar.com/avatar/ebbc0c9e8a10dcb98f03870edc6f0fbd</icon>
+  <subtitle>人间有味是清欢</subtitle>
+  <link href="https://www.jiande.bio/atom.xml" rel="self"/>
+  
+  <link href="https://www.jiande.bio/"/>
+  <updated>2020-09-05T12:12:19.854Z</updated>
+  <id>https://www.jiande.bio/</id>
+  
+  <author>
+    <name>WhuerJiande</name>
+    <email>jiande@yahoo.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://www.jiande.bio/2020/09/05/hello-world/"/>
+    <id>https://www.jiande.bio/2020/09/05/hello-world/</id>
+    <published>2020-09-05T12:12:19.854Z</published>
+    <updated>2020-09-05T12:12:19.854Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>工具-语法着色工具Highlight</title>
+    <link href="https://www.jiande.bio/2020/08/06/%E5%B7%A5%E5%85%B7-%E8%AF%AD%E6%B3%95%E7%9D%80%E8%89%B2%E5%B7%A5%E5%85%B7Highlight/"/>
+    <id>https://www.jiande.bio/2020/08/06/%E5%B7%A5%E5%85%B7-%E8%AF%AD%E6%B3%95%E7%9D%80%E8%89%B2%E5%B7%A5%E5%85%B7Highlight/</id>
+    <published>2020-08-06T01:39:41.000Z</published>
+    <updated>2020-08-12T08:32:51.488Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Highlight&lt;/strong&gt; 用于将源码输出为语法高亮的格式文件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支持输出为HTML,</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python中的正则表达式（re模块）</title>
+    <link href="https://www.jiande.bio/2020/08/06/python-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8Fre%E6%A8%A1%E5%9D%97/"/>
+    <id>https://www.jiande.bio/2020/08/06/python-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8Fre%E6%A8%A1%E5%9D%97/</id>
+    <published>2020-08-06T01:24:23.000Z</published>
+    <updated>2020-08-12T08:32:51.476Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一-简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一-简介&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C-vscode-实时同步代码到远程服务器</title>
+    <link href="https://www.jiande.bio/2020/08/06/C-vscode-%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://www.jiande.bio/2020/08/06/C-vscode-%E5%AE%9E%E6%97%B6%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2020-08-06T01:20:53.000Z</published>
+    <updated>2020-08-12T08:32:51.392Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;vscode-安装-sftp插件&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#vscode-安装-sftp插件&quot;&gt;&lt;/a&gt; vscode 安装 sftp插件&lt;/h1&gt;
+&lt;p&gt;这个很简单，就不多说了。&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C-Doxygen简明注释语法</title>
+    <link href="https://www.jiande.bio/2020/08/06/C-Doxygen%E7%AE%80%E6%98%8E%E6%B3%A8%E9%87%8A%E8%AF%AD%E6%B3%95/"/>
+    <id>https://www.jiande.bio/2020/08/06/C-Doxygen%E7%AE%80%E6%98%8E%E6%B3%A8%E9%87%8A%E8%AF%AD%E6%B3%95/</id>
+    <published>2020-08-06T00:32:26.000Z</published>
+    <updated>2020-08-12T08:32:51.382Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;语法简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#语法简介&quot;&gt;&lt;/a&gt; 语法简介&lt;/h2&gt;
+&lt;p&gt;Doxygen</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C-著名的C/C++框架和第三方库</title>
+    <link href="https://www.jiande.bio/2020/08/06/C-%E8%91%97%E5%90%8D%E7%9A%84C-C-%E6%A1%86%E6%9E%B6%E5%92%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/"/>
+    <id>https://www.jiande.bio/2020/08/06/C-%E8%91%97%E5%90%8D%E7%9A%84C-C-%E6%A1%86%E6%9E%B6%E5%92%8C%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93/</id>
+    <published>2020-08-06T00:31:04.000Z</published>
+    <updated>2020-08-12T08:32:51.394Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;值得学习的c语言开源项目&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#值得学习的c语言开源项目&quot;&gt;&lt;/a&gt; 值得学习的C语言开源项目&lt;/h2&gt;
+&lt;h2 id=&quot;-1-webbench&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C-stl标准库中集合常用函数</title>
+    <link href="https://www.jiande.bio/2020/08/06/C-stl%E6%A0%87%E5%87%86%E5%BA%93%E4%B8%AD%E9%9B%86%E5%90%88%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/"/>
+    <id>https://www.jiande.bio/2020/08/06/C-stl%E6%A0%87%E5%87%86%E5%BA%93%E4%B8%AD%E9%9B%86%E5%90%88%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</id>
+    <published>2020-08-06T00:07:46.000Z</published>
+    <updated>2020-08-12T08:32:51.387Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;STL库中有丰富的集合运算方法，我们可以使用它们快速完成交集、并集、差集、对称差集的运算。&lt;/p&gt;
+&lt;h1</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C-读取某个文件夹下面的子文件夹及其所有文件</title>
+    <link href="https://www.jiande.bio/2020/08/06/C-%E8%AF%BB%E5%8F%96%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E5%8F%8A%E5%85%B6%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6/"/>
+    <id>https://www.jiande.bio/2020/08/06/C-%E8%AF%BB%E5%8F%96%E6%9F%90%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E9%9D%A2%E7%9A%84%E5%AD%90%E6%96%87%E4%BB%B6%E5%A4%B9%E5%8F%8A%E5%85%B6%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6/</id>
+    <published>2020-08-06T00:03:13.000Z</published>
+    <updated>2020-08-12T08:32:51.394Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;c读取某个文件夹下面的子文件夹及其所有文件&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#c读取某个文件夹下面的子文件夹及其所有文件&quot;&gt;&lt;/a&gt; C++读取某个文件夹下面的子文件夹及其所有文件&lt;/h1&gt;
+&lt;h1 id=&quot;方法一&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SINEX文件格式简介</title>
+    <link href="https://www.jiande.bio/2020/08/05/GNSS-SINEX-SINEX%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E7%AE%80%E4%BB%8B/"/>
+    <id>https://www.jiande.bio/2020/08/05/GNSS-SINEX-SINEX%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E7%AE%80%E4%BB%8B/</id>
+    <published>2020-08-05T10:00:56.000Z</published>
+    <updated>2020-08-12T08:32:51.455Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自:&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="SINEX" scheme="https://www.jiande.bio/categories/GNSS/SINEX/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="SINEX" scheme="https://www.jiande.bio/tags/SINEX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KaTeX多个公式对齐</title>
+    <link href="https://www.jiande.bio/2020/08/05/hexo-KaTex-KaTeX%E5%A4%9A%E4%B8%AA%E5%85%AC%E5%BC%8F%E5%AF%B9%E9%BD%90/"/>
+    <id>https://www.jiande.bio/2020/08/05/hexo-KaTex-KaTeX%E5%A4%9A%E4%B8%AA%E5%85%AC%E5%BC%8F%E5%AF%B9%E9%BD%90/</id>
+    <published>2020-08-05T09:45:30.000Z</published>
+    <updated>2020-08-12T08:32:51.460Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;KaTex官网：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/categories/hexo/"/>
+    
+    <category term="KaTex" scheme="https://www.jiande.bio/categories/hexo/KaTex/"/>
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/tags/hexo/"/>
+    
+    <category term="KaTex" scheme="https://www.jiande.bio/tags/KaTex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ITRS/GCRS/J2000坐标系的相互转换</title>
+    <link href="https://www.jiande.bio/2020/08/05/GNSS-ITRS-GCRS-J2000%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/"/>
+    <id>https://www.jiande.bio/2020/08/05/GNSS-ITRS-GCRS-J2000%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/</id>
+    <published>2020-08-05T02:18:49.000Z</published>
+    <updated>2020-08-12T08:32:51.445Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;转载自：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="ITRS/GCRS/J2000" scheme="https://www.jiande.bio/categories/GNSS/ITRS-GCRS-J2000/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="ITRS" scheme="https://www.jiande.bio/tags/ITRS/"/>
+    
+    <category term="GCRS" scheme="https://www.jiande.bio/tags/GCRS/"/>
+    
+    <category term="J2000" scheme="https://www.jiande.bio/tags/J2000/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Homebrew简介和基本使用</title>
+    <link href="https://www.jiande.bio/2020/08/05/macOS-Homebrew%E7%AE%80%E4%BB%8B%E5%92%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>https://www.jiande.bio/2020/08/05/macOS-Homebrew%E7%AE%80%E4%BB%8B%E5%92%8C%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-08-05T02:04:28.000Z</published>
+    <updated>2020-08-12T08:32:51.474Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;homebrew&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#homebrew&quot;&gt;&lt;/a&gt; Homebrew&lt;/h1&gt;
+&lt;p&gt;Homebrew是一款Mac</summary>
+        
+      
+    
+    
+    
+    <category term="macOS" scheme="https://www.jiande.bio/categories/macOS/"/>
+    
+    <category term="Homebrew" scheme="https://www.jiande.bio/categories/macOS/Homebrew/"/>
+    
+    
+    <category term="macOS" scheme="https://www.jiande.bio/tags/macOS/"/>
+    
+    <category term="Homebrew" scheme="https://www.jiande.bio/tags/Homebrew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>9个最佳的Sublime Text主题</title>
+    <link href="https://www.jiande.bio/2020/08/05/%E5%B7%A5%E5%85%B7-SublimeText%E4%B8%BB%E9%A2%98/"/>
+    <id>https://www.jiande.bio/2020/08/05/%E5%B7%A5%E5%85%B7-SublimeText%E4%B8%BB%E9%A2%98/</id>
+    <published>2020-08-05T01:41:59.000Z</published>
+    <updated>2020-08-12T08:32:51.477Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;Sublime Text 是一个轻量、简洁、高效、跨平台的编辑器。有些人会认为变更Sublime</summary>
+        
+      
+    
+    
+    
+    <category term="编程" scheme="https://www.jiande.bio/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Sublime Text" scheme="https://www.jiande.bio/categories/%E7%BC%96%E7%A8%8B/Sublime-Text/"/>
+    
+    
+    <category term="编程" scheme="https://www.jiande.bio/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="Sublime Text" scheme="https://www.jiande.bio/tags/Sublime-Text/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Latex/MathJax/Katex数学公式手册</title>
+    <link href="https://www.jiande.bio/2020/08/03/hexo-latex-katex-%E6%89%8B%E5%86%8C/"/>
+    <id>https://www.jiande.bio/2020/08/03/hexo-latex-katex-%E6%89%8B%E5%86%8C/</id>
+    <published>2020-08-03T07:16:16.000Z</published>
+    <updated>2020-08-12T08:32:51.461Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;latexmathjaxkatex数学公式手册&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#latexmathjaxkatex数学公式手册&quot;&gt;&lt;/a&gt; Latex/MathJax/Katex数学公式手册&lt;/h1&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/categories/hexo/"/>
+    
+    <category term="Latex/MathJax/Katex" scheme="https://www.jiande.bio/categories/hexo/Latex-MathJax-Katex/"/>
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/tags/hexo/"/>
+    
+    <category term="Latex" scheme="https://www.jiande.bio/tags/Latex/"/>
+    
+    <category term="MathJax" scheme="https://www.jiande.bio/tags/MathJax/"/>
+    
+    <category term="Katex" scheme="https://www.jiande.bio/tags/Katex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>17-POD-导航卫星受力分析</title>
+    <link href="https://www.jiande.bio/2020/08/03/GNSS-POD-%E5%AF%BC%E8%88%AA%E5%8D%AB%E6%98%9F%E5%8F%97%E5%8A%9B%E5%88%86%E6%9E%90/"/>
+    <id>https://www.jiande.bio/2020/08/03/GNSS-POD-%E5%AF%BC%E8%88%AA%E5%8D%AB%E6%98%9F%E5%8F%97%E5%8A%9B%E5%88%86%E6%9E%90/</id>
+    <published>2020-08-03T02:15:51.000Z</published>
+    <updated>2020-08-12T08:32:51.447Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;本文主要节选于作者的本科毕业设计，并对其进行了进一步的更新整理。&lt;/p&gt;
+&lt;h1 id=&quot;导航卫星受力分析&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="POD" scheme="https://www.jiande.bio/categories/GNSS/POD/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="POD" scheme="https://www.jiande.bio/tags/POD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试-GNSS原理-广播星历</title>
+    <link href="https://www.jiande.bio/2020/08/01/GNSS-GNSS%E5%8E%9F%E7%90%86-%E5%B9%BF%E6%92%AD%E6%98%9F%E5%8E%86/"/>
+    <id>https://www.jiande.bio/2020/08/01/GNSS-GNSS%E5%8E%9F%E7%90%86-%E5%B9%BF%E6%92%AD%E6%98%9F%E5%8E%86/</id>
+    <published>2020-08-01T09:58:53.000Z</published>
+    <updated>2020-08-12T08:32:51.413Z</updated>
+    
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="原理与应用" scheme="https://www.jiande.bio/categories/GNSS/%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="工作面试" scheme="https://www.jiande.bio/tags/%E5%B7%A5%E4%BD%9C%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="工作笔试" scheme="https://www.jiande.bio/tags/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试-GNSS原理-GNSS简介</title>
+    <link href="https://www.jiande.bio/2020/08/01/GNSS-GNSS%E5%8E%9F%E7%90%86-%E7%BB%AA%E8%AE%BA/"/>
+    <id>https://www.jiande.bio/2020/08/01/GNSS-GNSS%E5%8E%9F%E7%90%86-%E7%BB%AA%E8%AE%BA/</id>
+    <published>2020-08-01T03:10:54.000Z</published>
+    <updated>2020-08-12T08:32:51.413Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一-gnss星座&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#一-gnss星座&quot;&gt;&lt;/a&gt; 一、GNSS星座&lt;/h1&gt;
+&lt;p&gt;具有全球导航定位能力的卫星导航定位系统称为全球卫星导航系统，英文全称为Global Navigation</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="原理与应用" scheme="https://www.jiande.bio/categories/GNSS/%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="工作面试" scheme="https://www.jiande.bio/tags/%E5%B7%A5%E4%BD%9C%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="工作笔试" scheme="https://www.jiande.bio/tags/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AF%95/"/>
+    
+    <category term="GPS" scheme="https://www.jiande.bio/tags/GPS/"/>
+    
+    <category term="BDS" scheme="https://www.jiande.bio/tags/BDS/"/>
+    
+    <category term="Galileo" scheme="https://www.jiande.bio/tags/Galileo/"/>
+    
+    <category term="GLONASS" scheme="https://www.jiande.bio/tags/GLONASS/"/>
+    
+    <category term="QZSS" scheme="https://www.jiande.bio/tags/QZSS/"/>
+    
+    <category term="IRNSS" scheme="https://www.jiande.bio/tags/IRNSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>收藏 - 北斗三号的区域短报文通信服务</title>
+    <link href="https://www.jiande.bio/2020/08/01/GNSS-%E6%94%B6%E8%97%8F-%E5%8C%97%E6%96%97%E4%B8%89%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%9F%9F%E7%9F%AD%E6%8A%A5%E6%96%87%E9%80%9A%E4%BF%A1%E6%9C%8D%E5%8A%A1/"/>
+    <id>https://www.jiande.bio/2020/08/01/GNSS-%E6%94%B6%E8%97%8F-%E5%8C%97%E6%96%97%E4%B8%89%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%9F%9F%E7%9F%AD%E6%8A%A5%E6%96%87%E9%80%9A%E4%BF%A1%E6%9C%8D%E5%8A%A1/</id>
+    <published>2020-08-01T02:43:49.000Z</published>
+    <updated>2020-08-12T08:32:51.456Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="收藏" scheme="https://www.jiande.bio/categories/GNSS/%E6%94%B6%E8%97%8F/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="BDS-3" scheme="https://www.jiande.bio/tags/BDS-3/"/>
+    
+    <category term="收藏" scheme="https://www.jiande.bio/tags/%E6%94%B6%E8%97%8F/"/>
+    
+    <category term="短报文" scheme="https://www.jiande.bio/tags/%E7%9F%AD%E6%8A%A5%E6%96%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ Newmat矩阵库 下载、安装和指北</title>
+    <link href="https://www.jiande.bio/2020/07/28/C-Newmat-%E6%8C%87%E5%8C%97/"/>
+    <id>https://www.jiande.bio/2020/07/28/C-Newmat-%E6%8C%87%E5%8C%97/</id>
+    <published>2020-07-28T13:26:10.000Z</published>
+    <updated>2020-08-12T08:32:51.387Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="C++" scheme="https://www.jiande.bio/categories/C/"/>
+    
+    <category term="newmat" scheme="https://www.jiande.bio/categories/C/newmat/"/>
+    
+    
+    <category term="C++" scheme="https://www.jiande.bio/tags/C/"/>
+    
+    <category term="编程" scheme="https://www.jiande.bio/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="newmat" scheme="https://www.jiande.bio/tags/newmat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CMake 软件下载、安装和指北</title>
+    <link href="https://www.jiande.bio/2020/07/27/C-CMake-%E6%8C%87%E5%8C%97/"/>
+    <id>https://www.jiande.bio/2020/07/27/C-CMake-%E6%8C%87%E5%8C%97/</id>
+    <published>2020-07-27T09:25:57.000Z</published>
+    <updated>2020-08-12T08:32:51.381Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="C++" scheme="https://www.jiande.bio/categories/C/"/>
+    
+    <category term="CMake" scheme="https://www.jiande.bio/categories/C/CMake/"/>
+    
+    
+    <category term="C++" scheme="https://www.jiande.bio/tags/C/"/>
+    
+    <category term="CMake" scheme="https://www.jiande.bio/tags/CMake/"/>
+    
+    <category term="编程" scheme="https://www.jiande.bio/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GNSS &amp; LEO 卫星图片集合</title>
+    <link href="https://www.jiande.bio/2020/07/26/GNSS-Galileo-satellite/"/>
+    <id>https://www.jiande.bio/2020/07/26/GNSS-Galileo-satellite/</id>
+    <published>2020-07-26T15:22:54.000Z</published>
+    <updated>2020-08-12T08:32:51.438Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="satellite" scheme="https://www.jiande.bio/categories/GNSS/satellite/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="LEO" scheme="https://www.jiande.bio/tags/LEO/"/>
+    
+    <category term="satellite" scheme="https://www.jiande.bio/tags/satellite/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typora 完全使用详解</title>
+    <link href="https://www.jiande.bio/2020/07/25/hexo-typera-markdown-%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <id>https://www.jiande.bio/2020/07/25/hexo-typera-markdown-%E7%BC%96%E8%BE%91%E5%99%A8/</id>
+    <published>2020-07-25T13:13:39.000Z</published>
+    <updated>2020-08-12T08:32:51.466Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;Typora 首先是一个 Markdown 文本编辑器，它支持且仅支持 Markdown 语法的文本编辑。在 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/categories/hexo/"/>
+    
+    <category term="markdown" scheme="https://www.jiande.bio/categories/hexo/markdown/"/>
+    
+    
+    <category term="markdown" scheme="https://www.jiande.bio/tags/markdown/"/>
+    
+    <category term="Typora" scheme="https://www.jiande.bio/tags/Typora/"/>
+    
+    <category term="Python" scheme="https://www.jiande.bio/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cartopy 简介、安装与使用</title>
+    <link href="https://www.jiande.bio/2020/07/25/GNSS-Cartopy-%E7%AE%80%E4%BB%8B-%E5%AE%89%E8%A3%85-%E4%BD%BF%E7%94%A8/"/>
+    <id>https://www.jiande.bio/2020/07/25/GNSS-Cartopy-%E7%AE%80%E4%BB%8B-%E5%AE%89%E8%A3%85-%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-07-25T04:33:22.000Z</published>
+    <updated>2020-08-12T08:32:51.396Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;转自：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- http://gnss.help/2018/01/30/cartopy-install-introduce/index.html
+-</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="Cartopy" scheme="https://www.jiande.bio/categories/GNSS/Cartopy/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="Python" scheme="https://www.jiande.bio/tags/Python/"/>
+    
+    <category term="Cartopy" scheme="https://www.jiande.bio/tags/Cartopy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RINEX 3 格式简介</title>
+    <link href="https://www.jiande.bio/2020/07/25/GNSS-RINEX3-format/"/>
+    <id>https://www.jiande.bio/2020/07/25/GNSS-RINEX3-format/</id>
+    <published>2020-07-25T04:18:45.000Z</published>
+    <updated>2020-08-12T08:32:51.447Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;转自：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="RINEX" scheme="https://www.jiande.bio/categories/GNSS/RINEX/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="RINEX" scheme="https://www.jiande.bio/tags/RINEX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gfzrnx 下载、安装及常用命令介绍</title>
+    <link href="https://www.jiande.bio/2020/07/25/GNSS-gfzrnx-%E7%94%A8%E6%B3%95/"/>
+    <id>https://www.jiande.bio/2020/07/25/GNSS-gfzrnx-%E7%94%A8%E6%B3%95/</id>
+    <published>2020-07-25T02:06:07.000Z</published>
+    <updated>2020-08-12T08:32:51.456Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt; 背景&lt;/h1&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="gfzrnx" scheme="https://www.jiande.bio/categories/GNSS/gfzrnx/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="gfzrnx" scheme="https://www.jiande.bio/tags/gfzrnx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown 模板</title>
+    <link href="https://www.jiande.bio/2020/07/24/hexo-markdown-%E6%A8%A1%E6%9D%BF/"/>
+    <id>https://www.jiande.bio/2020/07/24/hexo-markdown-%E6%A8%A1%E6%9D%BF/</id>
+    <published>2020-07-24T03:47:09.000Z</published>
+    <updated>2020-08-12T08:32:51.463Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;page-front-matter&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#page-front-matter&quot;&gt;&lt;/a&gt; Page Front-matter&lt;/h1&gt;
+&lt;p&gt;模板如下：&lt;/p&gt;
+&lt;figure</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/categories/hexo/"/>
+    
+    <category term="markdown" scheme="https://www.jiande.bio/categories/hexo/markdown/"/>
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/tags/hexo/"/>
+    
+    <category term="markdown" scheme="https://www.jiande.bio/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算例问题排除清单</title>
+    <link href="https://www.jiande.bio/2020/07/24/GNSS-%E7%AE%97%E4%BE%8B%E9%97%AE%E9%A2%98%E6%8E%92%E9%99%A4%E6%B8%85%E5%8D%95/"/>
+    <id>https://www.jiande.bio/2020/07/24/GNSS-%E7%AE%97%E4%BE%8B%E9%97%AE%E9%A2%98%E6%8E%92%E9%99%A4%E6%B8%85%E5%8D%95/</id>
+    <published>2020-07-24T03:46:06.000Z</published>
+    <updated>2020-08-12T08:32:51.460Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;数据准备&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#数据准备&quot;&gt;&lt;/a&gt; 数据准备&lt;/h1&gt;
+&lt;h2 id=&quot;o文件是24h还是72h是哪个软件合并的是标准格式吗&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="算例" scheme="https://www.jiande.bio/categories/GNSS/%E7%AE%97%E4%BE%8B/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="算例" scheme="https://www.jiande.bio/tags/%E7%AE%97%E4%BE%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++风格指南</title>
+    <link href="https://www.jiande.bio/2020/07/23/C-%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97/"/>
+    <id>https://www.jiande.bio/2020/07/23/C-%E9%A3%8E%E6%A0%BC%E6%8C%87%E5%8D%97/</id>
+    <published>2020-07-23T13:12:04.000Z</published>
+    <updated>2020-08-12T08:32:51.395Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景介绍&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景介绍&quot;&gt;&lt;/a&gt; 背景介绍&lt;/h1&gt;
+&lt;p&gt;C++ 是 Google 大部分开源项目的主要编程语言. 正如每个 C++ 程序员都知道的, C++ 有很多强大的特性,</summary>
+        
+      
+    
+    
+    
+    <category term="C++" scheme="https://www.jiande.bio/categories/C/"/>
+    
+    <category term="代码规范" scheme="https://www.jiande.bio/categories/C/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+    
+    <category term="C++" scheme="https://www.jiande.bio/tags/C/"/>
+    
+    <category term="编程" scheme="https://www.jiande.bio/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++ string 常用操作函数</title>
+    <link href="https://www.jiande.bio/2020/07/23/C-string-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0/"/>
+    <id>https://www.jiande.bio/2020/07/23/C-string-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%87%BD%E6%95%B0/</id>
+    <published>2020-07-23T10:19:28.000Z</published>
+    <updated>2020-08-12T08:32:51.391Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;c-stdstring标准库不包含的一些常用的小函数&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#c-stdstring标准库不包含的一些常用的小函数&quot;&gt;&lt;/a&gt; C++ </summary>
+        
+      
+    
+    
+    
+    <category term="C++" scheme="https://www.jiande.bio/categories/C/"/>
+    
+    <category term="std::string" scheme="https://www.jiande.bio/categories/C/std-string/"/>
+    
+    
+    <category term="C++" scheme="https://www.jiande.bio/tags/C/"/>
+    
+    <category term="编程" scheme="https://www.jiande.bio/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建记录</title>
+    <link href="https://www.jiande.bio/2020/07/22/hexo-%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+    <id>https://www.jiande.bio/2020/07/22/hexo-%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</id>
+    <published>2020-07-22T10:58:20.000Z</published>
+    <updated>2020-08-12T08:32:51.473Z</updated>
+    
+    
+    <summary type="html">个人博客搭建过程</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/categories/hexo/"/>
+    
+    <category term="blog" scheme="https://www.jiande.bio/categories/hexo/blog/"/>
+    
+    
+    <category term="hexo" scheme="https://www.jiande.bio/tags/hexo/"/>
+    
+    <category term="博客" scheme="https://www.jiande.bio/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GNSS-RINEXO文件格式</title>
+    <link href="https://www.jiande.bio/2020/07/21/GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/"/>
+    <id>https://www.jiande.bio/2020/07/21/GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</id>
+    <published>2020-07-21T10:35:56.000Z</published>
+    <updated>2020-08-12T08:32:51.448Z</updated>
+    
+    
+    <summary type="html">RINEXO格式说明</summary>
+    
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/categories/GNSS/"/>
+    
+    <category term="RINEX" scheme="https://www.jiande.bio/categories/GNSS/RINEX/"/>
+    
+    
+    <category term="GNSS" scheme="https://www.jiande.bio/tags/GNSS/"/>
+    
+    <category term="RINEX" scheme="https://www.jiande.bio/tags/RINEX/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python:通过ElementTree解析xml</title>
+    <link href="https://www.jiande.bio/2020/04/06/python-%E8%A7%A3%E6%9E%90xml%E4%B9%8BElementTree/"/>
+    <id>https://www.jiande.bio/2020/04/06/python-%E8%A7%A3%E6%9E%90xml%E4%B9%8BElementTree/</id>
+    <published>2020-04-06T11:46:27.000Z</published>
+    <updated>2020-08-12T08:32:51.476Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://www.jiande.bio/categories/Python/"/>
+    
+    <category term="ElementTree" scheme="https://www.jiande.bio/categories/Python/ElementTree/"/>
+    
+    
+    <category term="Python" scheme="https://www.jiande.bio/tags/Python/"/>
+    
+    <category term="ElementTree" scheme="https://www.jiande.bio/tags/ElementTree/"/>
+    
+    <category term="xml" scheme="https://www.jiande.bio/tags/xml/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python:通过lxml解析xml</title>
+    <link href="https://www.jiande.bio/2020/04/05/python-%E8%A7%A3%E6%9E%90xml%E4%B9%8Blxml/"/>
+    <id>https://www.jiande.bio/2020/04/05/python-%E8%A7%A3%E6%9E%90xml%E4%B9%8Blxml/</id>
+    <published>2020-04-05T11:35:58.000Z</published>
+    <updated>2020-08-12T08:32:51.477Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;背景&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#背景&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="Python" scheme="https://www.jiande.bio/categories/Python/"/>
+    
+    <category term="lxml" scheme="https://www.jiande.bio/categories/Python/lxml/"/>
+    
+    
+    <category term="Python" scheme="https://www.jiande.bio/tags/Python/"/>
+    
+    <category term="xml" scheme="https://www.jiande.bio/tags/xml/"/>
+    
+    <category term="lxml" scheme="https://www.jiande.bio/tags/lxml/"/>
+    
+  </entry>
+  
+</feed>

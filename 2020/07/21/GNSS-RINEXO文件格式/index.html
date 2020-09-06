@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GNSS-RINEXO文件格式 | 人间烟火</title><meta name="description" content="RINEXO格式说明"><meta name="keywords" content="GNSS,RINEX"><meta name="author" content="WhuerJiande,jiande@yahoo.com"><meta name="copyright" content="WhuerJiande"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.jiande.bio/2020/07/21/GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="GNSS-RINEXO文件格式"><meta property="og:url" content="https://www.jiande.bio/2020/07/21/GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/"><meta property="og:site_name" content="人间烟火"><meta property="og:description" content="RINEXO格式说明"><meta property="og:image" content="https://www.jiande.bio/myIMG/img/3.jpg"><meta property="article:published_time" content="2020-07-21T10:35:56.000Z"><meta property="article:modified_time" content="2020-08-12T08:32:51.448Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime: '天',
+  date_suffix: {"one_hour":"刚刚","hours":"小时前","day":"天前"},
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+    },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2020-08-12 16:32:51'
+}</script><noscript><style type="text/css">
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+  }
+}
+
+var autoChangeMode = 'false'
+var t = saveToLocal.get('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (saveToLocal.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="人间烟火" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/myIMG/night.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">33</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">42</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 总览</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#rinexo%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E"><span class="toc-number">1.</span> <span class="toc-text"> RINEXO格式说明</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#rinex%E6%A0%BC%E5%BC%8F%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> RINEX格式简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rinexo%E6%96%87%E4%BB%B6%E5%A4%B4%E7%A4%BA%E4%BE%8B"><span class="toc-number">1.2.</span> <span class="toc-text"> RINEXO文件头示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#rinexo%E6%96%87%E4%BB%B6%E5%A4%B4%E8%AF%B4%E6%98%8E"><span class="toc-number">1.2.1.</span> <span class="toc-text"> RINEXO文件头说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#obs-types%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.2.2.</span> <span class="toc-text"> OBS TYPES详解</span></a></li></ol></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(/myIMG/img/4.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">人间烟火</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 总览</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">GNSS-RINEXO文件格式</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-07-21T10:35:56.000Z" title="发表于 2020-07-21 18:35:56">2020-07-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.448Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/GNSS/">GNSS</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/GNSS/RINEX/">RINEX</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">533</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="rinexo格式说明"><a class="markdownIt-Anchor" href="#rinexo格式说明"></a> RINEXO格式说明</h1>
+<hr />
+<h2 id="rinex格式简介"><a class="markdownIt-Anchor" href="#rinex格式简介"></a> RINEX格式简介</h2>
+<blockquote>
+<p>RINEX（Receiver Independent Exchange Format/与接收机无关的交换格式）是一种在GPS测量应用中普遍采用的标准数据格式。</p>
+<p><strong>该格式采用文本文件存储数据，数据记录格式与接收机的制造厂商和具体型号无关</strong></p>
+<p>RINEX格式由瑞士伯尔尼大学天文学院（Astronomical Institute, University of Berne）的Werner  Gurtner于1989年提出。当时提出该数据格式的目的是为了能够综合处理在EUREF89(欧洲一项大规模的GPS联测项目)中所采集的GPS数据。该项目采用了来自4个不同厂商共60多台GPS接收机。</p>
+</blockquote>
+<hr />
+<h2 id="rinexo文件头示例"><a class="markdownIt-Anchor" href="#rinexo文件头示例"></a> RINEXO文件头示例</h2>
+<p><img src= "/img/loading.gif" data-lazy-src="GNSS-GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/image-20200721190858432.png" alt="RINEXO 文件头" /></p>
+<hr />
+<h3 id="rinexo文件头说明"><a class="markdownIt-Anchor" href="#rinexo文件头说明"></a> RINEXO文件头说明</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">关键词</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">RINEX VERSION / TYPE</td>
+<td>RINEX格式版本号</td>
+</tr>
+<tr>
+<td style="text-align:left">PGM / RUN BY / DATE</td>
+<td>文件生成商信息</td>
+</tr>
+<tr>
+<td style="text-align:left">COMMENT</td>
+<td>注释</td>
+</tr>
+<tr>
+<td style="text-align:left">MARKER NAME</td>
+<td>测站名，测站标识符</td>
+</tr>
+<tr>
+<td style="text-align:left">MARKER NUMBER</td>
+<td>测站标号</td>
+</tr>
+<tr>
+<td style="text-align:left">MARKER TYPE</td>
+<td>标识类型</td>
+</tr>
+<tr>
+<td style="text-align:left">OBSERVER / AGENCY</td>
+<td>观测机构的名称</td>
+</tr>
+<tr>
+<td style="text-align:left">REC # / TYPE / VERS</td>
+<td>接收机的信息</td>
+</tr>
+<tr>
+<td style="text-align:left">ANT # / TYPE</td>
+<td>接收机的天线类型</td>
+</tr>
+<tr>
+<td style="text-align:left">APPROX POSITION XYZ</td>
+<td>测站粗略坐标</td>
+</tr>
+<tr>
+<td style="text-align:left">ANTENNA: DELTA H/E/N</td>
+<td>天线ENH信息</td>
+</tr>
+<tr>
+<td style="text-align:left">SYS / # / OBS TYPES</td>
+<td>各系统观测值类</td>
+</tr>
+<tr>
+<td style="text-align:left">INTERVAL</td>
+<td>观测值间隔</td>
+</tr>
+<tr>
+<td style="text-align:left">TIME OF FIRST OBS</td>
+<td>初始历元</td>
+</tr>
+<tr>
+<td style="text-align:left">TIME OF LAST OBS</td>
+<td>结束历元</td>
+</tr>
+<tr>
+<td style="text-align:left">SYS / PHASE SHIFTS</td>
+<td>系统相位偏差</td>
+</tr>
+<tr>
+<td style="text-align:left">END OF HEADER</td>
+<td>结束标识</td>
+</tr>
+</tbody>
+</table>
+<h3 id="obs-types详解"><a class="markdownIt-Anchor" href="#obs-types详解"></a> OBS TYPES详解</h3>
+<p>在多频多系统GNSS系统中，常用系统的频率分布如下图所示（图片来自Springer hander book）</p>
+<p><img src= "/img/loading.gif" data-lazy-src="GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/image-20200721204516278.png" alt="image-20200721204516278" /></p>
+<p><img src= "/img/loading.gif" data-lazy-src="GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/image-20200721204830112.png" alt="image-20200721204830112" /></p>
+<p><img src= "/img/loading.gif" data-lazy-src="GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/image-20200721204708616.png" alt="image-20200721204708616" /></p>
+<p><img src= "/img/loading.gif" data-lazy-src="GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/image-20200721204937265.png" alt="image-20200721204937265" /></p>
+<p>这些多频信号，在被接收机接收解码后，每个频率对应的观测值就会按照一定的格式写入rinexo文件中，例如</p>
+<blockquote>
+<p>E   16 C1C C5Q C7Q C8Q D1C D5Q D7Q D8Q L1C L5Q L7Q L8Q S1C  SYS / # / OBS TYPES</p>
+</blockquote>
+<ol>
+<li>E : 观测值系统，Galileo</li>
+<li>16：观测到的卫星数，16颗</li>
+<li>C1C：E1频率的C码</li>
+</ol>
+<p>每个系统的观测值类似都如上述规律记录，C1C中，第一个C表示观测值类型，如C伪距码，D多普勒，L载波相位等。第二个1表示频点，Galileo常用频点为band1，band5，band7，band8。最后一位C表示观测值的解码类型。</p>
+<p><strong>待补充 2020.07.21</strong></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jiande@yahoo.com">WhuerJiande</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.jiande.bio/2020/07/21/GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/">https://www.jiande.bio/2020/07/21/GNSS-RINEXO%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.jiande.bio" target="_blank">人间烟火</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/GNSS/">GNSS</a><a class="post-meta__tags" href="/tags/RINEX/">RINEX</a></div><div class="post_share"><div class="social-share" data-image="/myIMG/img/3.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/07/22/hexo-%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"><img class="prev-cover" data-lazy-src="/myIMG/img/1.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">hexo搭建记录</div></div></a></div><div class="next-post pull-right"><a href="/2020/04/06/python-%E8%A7%A3%E6%9E%90xml%E4%B9%8BElementTree/"><img class="next-cover" data-lazy-src="/myIMG/img/49.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">python:通过ElementTree解析xml</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/07/25/GNSS-RINEX3-format/" title="RINEX 3 格式简介"><img class="cover" data-lazy-src="/myIMG/img/15.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-25</div><div class="title">RINEX 3 格式简介</div></div></a></div><div><a href="/2020/08/01/GNSS-GNSS原理-广播星历/" title="面试-GNSS原理-广播星历"><img class="cover" data-lazy-src="/myIMG/img/31.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-01</div><div class="title">面试-GNSS原理-广播星历</div></div></a></div><div><a href="/2020/08/01/GNSS-GNSS原理-绪论/" title="面试-GNSS原理-GNSS简介"><img class="cover" data-lazy-src="/myIMG/img/29.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-01</div><div class="title">面试-GNSS原理-GNSS简介</div></div></a></div><div><a href="/2020/08/05/GNSS-ITRS-GCRS-J2000坐标系的相互转换/" title="ITRS/GCRS/J2000坐标系的相互转换"><img class="cover" data-lazy-src="/myIMG/img/41.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-05</div><div class="title">ITRS/GCRS/J2000坐标系的相互转换</div></div></a></div><div><a href="/2020/08/03/GNSS-POD-导航卫星受力分析/" title="17-POD-导航卫星受力分析"><img class="cover" data-lazy-src="/myIMG/img/33.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-03</div><div class="title">17-POD-导航卫星受力分析</div></div></a></div><div><a href="/2020/08/05/GNSS-SINEX-SINEX文件格式简介/" title="SINEX文件格式简介"><img class="cover" data-lazy-src="/myIMG/img/45.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-05</div><div class="title">SINEX文件格式简介</div></div></a></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By WhuerJiande</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>$(function () {
+  $('span.katex-display').wrap('<div class="katex-wrap"></div>')
+})</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>

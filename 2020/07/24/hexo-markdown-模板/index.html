@@ -1,0 +1,297 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>markdown 模板 | 人间烟火</title><meta name="description" content="Page Front-matter 模板如下： 123456789101112131415---title:date:updated:type:comments:description:keywords:top_img:mathjax:katex:aside:aplayer：highlight_shrink：---    写法 解释     title 【必需】页面标题   date 【必需】页"><meta name="keywords" content="hexo,markdown"><meta name="author" content="WhuerJiande,jiande@yahoo.com"><meta name="copyright" content="WhuerJiande"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.jiande.bio/2020/07/24/hexo-markdown-%E6%A8%A1%E6%9D%BF/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="markdown 模板"><meta property="og:url" content="https://www.jiande.bio/2020/07/24/hexo-markdown-%E6%A8%A1%E6%9D%BF/"><meta property="og:site_name" content="人间烟火"><meta property="og:description" content="Page Front-matter 模板如下： 123456789101112131415---title:date:updated:type:comments:description:keywords:top_img:mathjax:katex:aside:aplayer：highlight_shrink：---    写法 解释     title 【必需】页面标题   date 【必需】页"><meta property="og:image" content="https://www.jiande.bio/myIMG/img/9.jpg"><meta property="article:published_time" content="2020-07-24T03:47:09.000Z"><meta property="article:modified_time" content="2020-08-12T08:32:51.463Z"><meta name="twitter:card" content="summary"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime: '天',
+  date_suffix: {"one_hour":"刚刚","hours":"小时前","day":"天前"},
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+    },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2020-08-12 16:32:51'
+}</script><noscript><style type="text/css">
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+  }
+}
+
+var autoChangeMode = 'false'
+var t = saveToLocal.get('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (saveToLocal.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/background.css"><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="人间烟火" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/myIMG/night.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">33</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">42</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">28</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 总览</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="color"></div><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#page-front-matter"><span class="toc-text"> Page Front-matter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#post-front-matter"><span class="toc-text"> Post Front-matter</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82"><span class="toc-text"> 标签外挂</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#note-bootstrap-callout"><span class="toc-text"> Note (Bootstrap Callout)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gallery-%E7%9B%B8%E5%86%8C"><span class="toc-text"> Gallery 相册</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(/myIMG/img/10.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">人间烟火</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 总览</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">markdown 模板</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-07-24T03:47:09.000Z" title="发表于 2020-07-24 11:47:09">2020-07-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-12T08:32:51.463Z" title="更新于 2020-08-12 16:32:51">2020-08-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/hexo/">hexo</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/hexo/markdown/">markdown</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">978</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="page-front-matter"><a class="markdownIt-Anchor" href="#page-front-matter"></a> Page Front-matter</h1>
+<p>模板如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">type:</span><br><span class="line">comments:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">top<span class="emphasis">_img:</span></span><br><span class="line"><span class="emphasis">mathjax:</span></span><br><span class="line"><span class="emphasis">katex:</span></span><br><span class="line"><span class="emphasis">aside:</span></span><br><span class="line"><span class="emphasis">aplayer：</span></span><br><span class="line"><span class="emphasis">highlight_</span>shrink：</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">写法</th>
+<th style="text-align:left">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">【必需】页面标题</td>
+</tr>
+<tr>
+<td style="text-align:left">date</td>
+<td style="text-align:left">【必需】页面创建日期</td>
+</tr>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">【必需】标籤、分类和友情链接三个页面需要配置</td>
+</tr>
+<tr>
+<td style="text-align:left">updated</td>
+<td style="text-align:left">【可选】页面更新日期</td>
+</tr>
+<tr>
+<td style="text-align:left">description</td>
+<td style="text-align:left">【可选】页面描述</td>
+</tr>
+<tr>
+<td style="text-align:left">keywords</td>
+<td style="text-align:left">【可选】页面关键字</td>
+</tr>
+<tr>
+<td style="text-align:left">comments</td>
+<td style="text-align:left">【可选】显示页面评论模块(默认 true)</td>
+</tr>
+<tr>
+<td style="text-align:left">top_img</td>
+<td style="text-align:left">【可选】页面顶部图片</td>
+</tr>
+<tr>
+<td style="text-align:left">mathjax</td>
+<td style="text-align:left">【可选】显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td style="text-align:left">katex</td>
+<td style="text-align:left">【可选】显示katex(当设置katex的per_page: false时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td style="text-align:left">aside</td>
+<td style="text-align:left">【可选】显示侧边栏 (默认 true)</td>
+</tr>
+<tr>
+<td style="text-align:left">aplayer</td>
+<td style="text-align:left">【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐 配置</td>
+</tr>
+<tr>
+<td style="text-align:left">highlight_shrink</td>
+<td style="text-align:left">【可选】配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="post-front-matter"><a class="markdownIt-Anchor" href="#post-front-matter"></a> Post Front-matter</h1>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br><span class="line">top<span class="emphasis">_img:</span></span><br><span class="line"><span class="emphasis">comments：</span></span><br><span class="line"><span class="emphasis">cover:  </span></span><br><span class="line"><span class="emphasis">toc:  </span></span><br><span class="line"><span class="emphasis">toc_</span>number:</span><br><span class="line">auto<span class="emphasis">_open:</span></span><br><span class="line"><span class="emphasis">copyright:</span></span><br><span class="line"><span class="emphasis">mathjax:</span></span><br><span class="line"><span class="emphasis">katex:</span></span><br><span class="line"><span class="emphasis">aplayer：</span></span><br><span class="line"><span class="emphasis">highlight_</span>shrink：</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>写法</th>
+<th style="text-align:left">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td style="text-align:left">【必需】文章标题</td>
+</tr>
+<tr>
+<td>date</td>
+<td style="text-align:left">【必需】文章创建日期</td>
+</tr>
+<tr>
+<td>updated</td>
+<td style="text-align:left">【可选】文章更新日期</td>
+</tr>
+<tr>
+<td>tags</td>
+<td style="text-align:left">【可选】文章标籤</td>
+</tr>
+<tr>
+<td>categories</td>
+<td style="text-align:left">【可选】文章分类</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td style="text-align:left">【可选】文章关键字</td>
+</tr>
+<tr>
+<td>description</td>
+<td style="text-align:left">【可选】文章描述</td>
+</tr>
+<tr>
+<td>top_img</td>
+<td style="text-align:left">【可选】文章顶部图片</td>
+</tr>
+<tr>
+<td>cover</td>
+<td style="text-align:left">【可选】文章缩略图(如果没有设置top_img,文章页顶部将显示缩略图，可设为false/图片地址/留空)</td>
+</tr>
+<tr>
+<td>toc</td>
+<td style="text-align:left">【可选】显示文章TOC(默认为设置中toc的enable配置)</td>
+</tr>
+<tr>
+<td>toc_number</td>
+<td style="text-align:left">【可选】显示toc_number(默认为设置中toc的number配置)</td>
+</tr>
+<tr>
+<td>auto_open</td>
+<td style="text-align:left">【可选】是否自动打开TOC(默认为设置中toc的auto_open配置)</td>
+</tr>
+<tr>
+<td>copyright</td>
+<td style="text-align:left">【可选】显示文章版权模块(默认为设置中post_copyright的enable配置)</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td style="text-align:left">【可选】显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td>katex</td>
+<td style="text-align:left">【可选】显示katex(当设置katex的per_page: false时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td>aplayer</td>
+<td style="text-align:left">【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐 配置</td>
+</tr>
+<tr>
+<td>highlight_shrink</td>
+<td style="text-align:left">【可选】配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)</td>
+</tr>
+<tr>
+<td>comments</td>
+<td style="text-align:left">【可选】显示文章评论模块(默认 true)</td>
+</tr>
+</tbody>
+</table>
+<h1 id="标签外挂"><a class="markdownIt-Anchor" href="#标签外挂"></a> 标签外挂</h1>
+<p>标籤外挂是 Hexo 独有的功能，并不是标準的 Markdown 格式。</p>
+<p>以下的写法，只适用于 Butterfly 主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意</p>
+<p>标籤外挂虽然能为主题带来一些额外的功能和 UI 方面的强化，但是，标籤外挂也有明显的限制，使用时请留意。</p>
+<h2 id="note-bootstrap-callout"><a class="markdownIt-Anchor" href="#note-bootstrap-callout"></a> Note (Bootstrap Callout)</h2>
+<p>butterfly.yml</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">note:</span></span><br><span class="line">  <span class="comment"># Note tag style values:</span></span><br><span class="line">  <span class="comment">#  - simple    bs-callout old alert style. Default.</span></span><br><span class="line">  <span class="comment">#  - modern    bs-callout new (v2-v3) alert style.</span></span><br><span class="line">  <span class="comment">#  - flat      flat callout style with background, like on Mozilla or StackOverflow.</span></span><br><span class="line">  <span class="comment">#  - disabled  disable all CSS styles import of note tag.</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">simple</span></span><br><span class="line">  <span class="attr">icons:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">border_radius:</span> <span class="number">3</span></span><br><span class="line">  <span class="comment"># Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).</span></span><br><span class="line">  <span class="comment"># Offset also applied to label tag variables. This option can work with disabled note tag.</span></span><br><span class="line">  <span class="attr">light_bg_offset:</span> <span class="number">0</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>用法：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">Any content (support inline tags too.io).</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br><span class="line">[no-icon] : Disable icon in note.</span><br><span class="line"></span><br><span class="line">All parameters are optional.</span><br></pre></td></tr></table></figure>
+<p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<p>style: simple</p>
+<p><img src= "/img/loading.gif" data-lazy-src="hexo-markdown-%E6%A8%A1%E6%9D%BF/20200105232825.png" alt="20200105232825" /></p>
+<p>style: modern</p>
+<p><img src= "/img/loading.gif" data-lazy-src="hexo-markdown-%E6%A8%A1%E6%9D%BF/20200105233018.png" alt="20200105233018" /></p>
+<p>style: flat</p>
+<p><img src= "/img/loading.gif" data-lazy-src="hexo-markdown-%E6%A8%A1%E6%9D%BF/20200105233145.png" alt="20200105233145" /></p>
+<p>style: disabled</p>
+<p><img src= "/img/loading.gif" data-lazy-src="hexo-markdown-%E6%A8%A1%E6%9D%BF/20200105233310.png" alt="20200105233310" /></p>
+<h1 id="gallery-相册"><a class="markdownIt-Anchor" href="#gallery-相册"></a> Gallery 相册</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">markdown 图片格式</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
+<p>例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;25&#x2F;Fze9jchtnyJXMHN.jpg)</span><br><span class="line">![](https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;25&#x2F;ryLVePaqkYm4TEK.jpg)</span><br><span class="line">![](https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;25&#x2F;gEy5Zc1Ai6VuO4N.jpg)</span><br><span class="line">![](https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;25&#x2F;d6QHbytlSYO4FBG.jpg)</span><br><span class="line">![](https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;25&#x2F;6nepIJ1xTgufatZ.jpg)</span><br><span class="line">![](https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;25&#x2F;E7Jvr4eIPwUNmzq.jpg)</span><br><span class="line">![](https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;25&#x2F;mh19anwBSWIkGlH.jpg)</span><br><span class="line">![](https:&#x2F;&#x2F;i.loli.net&#x2F;2019&#x2F;12&#x2F;25&#x2F;2tu9JC8ewpBFagv.jpg)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:jiande@yahoo.com">WhuerJiande</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.jiande.bio/2020/07/24/hexo-markdown-%E6%A8%A1%E6%9D%BF/">https://www.jiande.bio/2020/07/24/hexo-markdown-%E6%A8%A1%E6%9D%BF/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.jiande.bio" target="_blank">人间烟火</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo</a><a class="post-meta__tags" href="/tags/markdown/">markdown</a></div><div class="post_share"><div class="social-share" data-image="/myIMG/img/9.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/07/25/GNSS-gfzrnx-%E7%94%A8%E6%B3%95/"><img class="prev-cover" data-lazy-src="/myIMG/img/13.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">gfzrnx 下载、安装及常用命令介绍</div></div></a></div><div class="next-post pull-right"><a href="/2020/07/24/GNSS-%E7%AE%97%E4%BE%8B%E9%97%AE%E9%A2%98%E6%8E%92%E9%99%A4%E6%B8%85%E5%8D%95/"><img class="next-cover" data-lazy-src="/myIMG/img/11.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">算例问题排除清单</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020/08/05/hexo-KaTex-KaTeX多个公式对齐/" title="KaTeX多个公式对齐"><img class="cover" data-lazy-src="/myIMG/img/43.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-05</div><div class="title">KaTeX多个公式对齐</div></div></a></div><div><a href="/2020/07/22/hexo-搭建记录/" title="hexo搭建记录"><img class="cover" data-lazy-src="/myIMG/img/1.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-22</div><div class="title">hexo搭建记录</div></div></a></div><div><a href="/2020/08/03/hexo-latex-katex-手册/" title="Latex/MathJax/Katex数学公式手册"><img class="cover" data-lazy-src="/myIMG/img/35.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-08-03</div><div class="title">Latex/MathJax/Katex数学公式手册</div></div></a></div><div><a href="/2020/07/25/hexo-typera-markdown-编辑器/" title="Typora 完全使用详解"><img class="cover" data-lazy-src="/myIMG/img/19.jpg"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-25</div><div class="title">Typora 完全使用详解</div></div></a></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By WhuerJiande</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>$(function () {
+  $('span.katex-display').wrap('<div class="katex-wrap"></div>')
+})</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
