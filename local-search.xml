@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2024/10/17/hello-world/"/>
+    <url>/2024/10/17/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>博客-0001-从零开始搭建github个人博客</title>
+    <link href="/2019/10/10/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2019/10/10/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h1 id="GitHub-Hexo搭建个人博客网站"><a href="#GitHub-Hexo搭建个人博客网站" class="headerlink" title="GitHub + Hexo搭建个人博客网站"></a>GitHub + Hexo搭建个人博客网站</h1><h2 id="0-前提"><a href="#0-前提" class="headerlink" title="0.前提"></a>0.前提</h2><p>需要对Github网站，git工具有一定了解，具备一定计算机相关知识。</p><p>本教程所有操作均在Window平台完成，其他平台理论上也能成功，但可能需要自己根据情况对部分步骤进行调整。</p><h2 id="1-软件安装"><a href="#1-软件安装" class="headerlink" title="1.软件安装"></a>1.软件安装</h2><p>准备GitHub账号，网址为：<a href="https://github.com/">GitHub</a></p><p>安装<strong>Git</strong>软件，下载网址为：<a href="https://git-scm.com/">Git (git-scm.com)</a></p><p>安装<strong>Node.js</strong>软件，下载地址为：<a href="https://nodejs.org/zh-cn">Node.js — 在任何地方运行 JavaScript (nodejs.org)</a></p><h2 id="2-Github仓库准备"><a href="#2-Github仓库准备" class="headerlink" title="2.Github仓库准备"></a>2.Github仓库准备</h2><p>在<code>GitHub</code>上创建一个新的代码仓库用于个人博客：</p><p>需要注意如下几点：</p><ol><li>仓库必须是<strong>Public</strong>仓库</li><li>仓库名称必须是<strong>username.github.io</strong>这样的形式</li><li>勾选<strong>Add a README file</strong>选项</li></ol><p>创建完成后，进入到仓库的设置界面：</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>博客</tag>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Fluid</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
