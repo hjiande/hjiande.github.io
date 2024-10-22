@@ -1,6 +1,6 @@
 ## 博客链接
 
-[hjiande.github.io](https://github.com/hjiande/hjiande.github.io)
+[Virtual Void](https://hjiande.github.io/)
 
 ## 三方说明
 
