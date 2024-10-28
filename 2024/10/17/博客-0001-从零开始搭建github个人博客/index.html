@@ -19,16 +19,16 @@
   <meta name="author" content="jdhuang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="GitHub + Hexo 搭建个人博客网站0.前提需要对Github网站，git工具有一定了解，具备一定计算机相关知识。 本教程所有操作均在Window平台完成，其他平台理论上也能成功，但可能需要自己根据情况对部分步骤进行调整。  本站效果：    1.软件安装准备GitHub账号，网址为：GitHub 安装Git软件，下载网址为：Git (git-scm.com) 安装Node.js软件，下载">
+    <meta name="description" content="GitHub + Hexo 搭建个人博客网站 0.前提 需要对Github网站，git工具有一定了解，具备一定计算机相关知识。 本教程所有操作均在Window平台完成，其他平台理论上也能成功，但可能需要自己根据情况对部分步骤进行调整。  本站效果：   1.软件安装 准备GitHub账号，网址为：GitHub 安装Git软件，下载网址为：Git (git-scm.com) 安装Node.js软件，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub+Hexo搭建个人博客网站">
 <meta property="og:url" content="https://hjiande.github.io/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Virtual Void">
-<meta property="og:description" content="GitHub + Hexo 搭建个人博客网站0.前提需要对Github网站，git工具有一定了解，具备一定计算机相关知识。 本教程所有操作均在Window平台完成，其他平台理论上也能成功，但可能需要自己根据情况对部分步骤进行调整。  本站效果：    1.软件安装准备GitHub账号，网址为：GitHub 安装Git软件，下载网址为：Git (git-scm.com) 安装Node.js软件，下载">
+<meta property="og:description" content="GitHub + Hexo 搭建个人博客网站 0.前提 需要对Github网站，git工具有一定了解，具备一定计算机相关知识。 本教程所有操作均在Window平台完成，其他平台理论上也能成功，但可能需要自己根据情况对部分步骤进行调整。  本站效果：   1.软件安装 准备GitHub账号，网址为：GitHub 安装Git软件，下载网址为：Git (git-scm.com) 安装Node.js软件，">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://hjiande.github.io/img/01-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA.png">
 <meta property="article:published_time" content="2024-10-17T02:00:00.000Z">
-<meta property="article:modified_time" content="2024-10-20T14:12:23.855Z">
+<meta property="article:modified_time" content="2024-10-28T04:20:41.452Z">
 <meta property="article:author" content="jdhuang">
 <meta property="article:tag" content="博客">
 <meta property="article:tag" content="Hexo">
@@ -227,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          986 字
+          1.1k 字
         
       </span>
     
@@ -238,7 +238,7 @@
         
         
         
-          9 分钟
+          10 分钟
         
       </span>
     
@@ -280,82 +280,91 @@
             
               <div class="markdown-body">
                 
-                <h1 id="GitHub-Hexo-搭建个人博客网站"><a href="#GitHub-Hexo-搭建个人博客网站" class="headerlink" title="GitHub + Hexo 搭建个人博客网站"></a>GitHub + Hexo 搭建个人博客网站</h1><h2 id="0-前提"><a href="#0-前提" class="headerlink" title="0.前提"></a>0.前提</h2><p>需要对Github网站，git工具有一定了解，具备一定计算机相关知识。</p>
+                <h1>GitHub + Hexo 搭建个人博客网站</h1>
+<h2 id="0-前提">0.前提</h2>
+<p>需要对Github网站，git工具有一定了解，具备一定计算机相关知识。</p>
 <p>本教程所有操作均在Window平台完成，其他平台理论上也能成功，但可能需要自己根据情况对部分步骤进行调整。</p>
 <hr>
 <p>本站效果：</p>
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/05-Github%E7%BD%91%E7%AB%99%E6%95%88%E6%9E%9C%E7%A4%BA%E6%84%8F%E5%9B%BE.png" srcset="/img/loading.gif" lazyload class="">
-
 <hr>
-<h2 id="1-软件安装"><a href="#1-软件安装" class="headerlink" title="1.软件安装"></a>1.软件安装</h2><p>准备<strong>GitHub</strong>账号，网址为：<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a></p>
+<h2 id="1-软件安装">1.软件安装</h2>
+<p>准备<strong>GitHub</strong>账号，网址为：<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a></p>
 <p>安装<strong>Git</strong>软件，下载网址为：<a target="_blank" rel="noopener" href="https://git-scm.com/">Git (git-scm.com)</a></p>
 <p>安装<strong>Node.js</strong>软件，下载地址为：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn">Node.js — 在任何地方运行 JavaScript (nodejs.org)</a></p>
-<h2 id="2-Github仓库准备"><a href="#2-Github仓库准备" class="headerlink" title="2.Github仓库准备"></a>2.Github仓库准备</h2><h3 id="2-1-仓库创建"><a href="#2-1-仓库创建" class="headerlink" title="2.1 仓库创建"></a>2.1 仓库创建</h3><p>在<code>GitHub</code>上创建一个新的代码仓库用于个人博客：</p>
+<h2 id="2-Github仓库准备">2.Github仓库准备</h2>
+<h3 id="2-1-仓库创建">2.1 仓库创建</h3>
+<p>在<code>GitHub</code>上创建一个新的代码仓库用于个人博客：</p>
 <p>需要注意如下几点：</p>
 <ol>
 <li>仓库必须是<strong>Public</strong>仓库</li>
-<li>仓库名称必须是<strong>username.github.io</strong>这样的形式</li>
+<li>仓库名称必须是<strong><a target="_blank" rel="noopener" href="http://username.github.io">username.github.io</a></strong>这样的形式</li>
 <li>勾选<strong>Add a README file</strong>选项</li>
 </ol>
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/01-Github%E4%BB%93%E5%BA%93%E5%88%9B%E5%BB%BA.png" srcset="/img/loading.gif" lazyload class="">
-
-<h3 id="2-2-仓库设置"><a href="#2-2-仓库设置" class="headerlink" title="2.2 仓库设置"></a>2.2 仓库设置</h3><p>创建完成后，进入到仓库的设置界面的Pages选项，将branch:main设置为当前活动分支：</p>
+<h3 id="2-2-仓库设置">2.2 仓库设置</h3>
+<p>创建完成后，进入到仓库的设置界面的Pages选项，将branch:main设置为当前活动分支：</p>
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/02-Github%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload class="">
-
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/03-Github%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload class="">
-
-<h3 id="2-3-仓库初始化"><a href="#2-3-仓库初始化" class="headerlink" title="2.3 仓库初始化"></a>2.3 仓库初始化</h3><p>将当前仓库下载到本地后，通过git-bash打开</p>
+<h3 id="2-3-仓库初始化">2.3 仓库初始化</h3>
+<p>将当前仓库下载到本地后，通过git-bash打开</p>
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/04-GitBash%E6%89%93%E5%BC%80%E4%BB%93%E5%BA%93.png" srcset="/img/loading.gif" lazyload class="">
-
 <p>依次运行如下命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli <span class="hljs-comment"># 此命令完成对 hexo 的安装</span><br>hexo init hexo-blog     <span class="hljs-comment"># 此命令完成对博客路径的初始化</span><br><span class="hljs-built_in">cd</span> hexo-blog            <span class="hljs-comment"># 切换路径</span><br>hexo s -g               <span class="hljs-comment"># 开启本地预览</span><br></code></pre></td></tr></table></figure>
-
 <p>此时，可以打开浏览器访问 <code>http://localhost:4000</code> 即可看到内容，<code>Ctrl+C</code> 停止本地预览。本地预览可以实时查看博客的编辑情况，待博客写完后一起部署到 <code>GitHub</code> 上。</p>
-<h3 id="2-4-仓库推送设置"><a href="#2-4-仓库推送设置" class="headerlink" title="2.4 仓库推送设置"></a>2.4 仓库推送设置</h3><p>初始化后，可以在<code>hexo-blog</code>文件夹中看到一个名为<code>_config.yml</code>的文件。在该文件中设置Github推送的方式：</p>
+<h3 id="2-4-仓库推送设置">2.4 仓库推送设置</h3>
+<p>初始化后，可以在<code>hexo-blog</code>文件夹中看到一个名为<code>_config.yml</code>的文件。在该文件中设置Github推送的方式：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">git@github.com:hjiande/hjiande.github.io.git</span>    <span class="hljs-comment"># 修改为自己的路径</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span>                                          <span class="hljs-comment"># 修改为自己的分支</span><br></code></pre></td></tr></table></figure>
-
 <p>设置完成后，在Git-Bash中可以通过如下命令推送：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save <span class="hljs-comment"># 第一次的话，先安装部署插件</span><br>hexo d                               <span class="hljs-comment"># 部署到github中</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="3-博客优化"><a href="#3-博客优化" class="headerlink" title="3.博客优化"></a>3.博客优化</h2><h3 id="3-1主题选择"><a href="#3-1主题选择" class="headerlink" title="3.1主题选择"></a>3.1主题选择</h3><p>我这里选择的是<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">hexo-theme-fluid</a>主题，还有很多开源的主题，大家可以根据自己的喜好选择。</p>
+<h2 id="3-博客优化">3.博客优化</h2>
+<h3 id="3-1主题选择">3.1主题选择</h3>
+<p>我这里选择的是<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">hexo-theme-fluid</a>主题，还有很多开源的主题，大家可以根据自己的喜好选择。</p>
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/04-fluid%E4%B8%BB%E9%A2%98%E6%95%88%E6%9E%9C%E5%9B%BE.png" srcset="/img/loading.gif" lazyload class="">
-
 <p>主题的安装和设置方式可以参考自己对应主题的帮助文档。</p>
-<h3 id="3-3-本地图片插入"><a href="#3-3-本地图片插入" class="headerlink" title="3.3 本地图片插入"></a>3.3 本地图片插入</h3><p>该方法为<strong>hexo-v5.0</strong>以上版本选择，其他版本不保真。</p>
-<p>推荐使用<a target="_blank" rel="noopener" href="https://github.com/yiyungent/hexo-asset-img">yiyungent&#x2F;hexo-asset-img: 🍰 Hexo local image plugin. | Hexo 本地图片插件: 转换 图片相对路径 为 asset_img (github.com)</a></p>
+<h3 id="3-3-本地图片插入">3.3 本地图片插入</h3>
+<p>该方法为<strong>hexo-v5.0</strong>以上版本选择，其他版本不保真。</p>
+<p>推荐使用<a target="_blank" rel="noopener" href="https://github.com/yiyungent/hexo-asset-img">yiyungent/hexo-asset-img: 🍰 Hexo local image plugin. | Hexo 本地图片插件: 转换 图片相对路径 为 asset_img (github.com)</a></p>
 <p>使用方法为：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install git://github.com/yiyungent/hexo-asset-img.git#main<br></code></pre></td></tr></table></figure>
-
 <p>修改<code>_config.yml</code>配置：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-
 <p>图片路径为：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo-typora<br>├── apppicker.jpg<br>├── logo.png<br>└── rules.jpg<br>hexo-typora.md<br></code></pre></td></tr></table></figure>
-
-<h3 id="3-4-数据备份"><a href="#3-4-数据备份" class="headerlink" title="3.4 数据备份"></a>3.4 数据备份</h3><p>因为Github中Github.io用于部署后，就不能将博客资料推送到仓库中，这里有两种方法看用于数据备份，一种是本地磁盘备份，另一种是再建一个仓库来备份博客内容。然后通过git推送到不同仓库的方式实现双备份。</p>
+<h3 id="3-4-数据备份">3.4 数据备份</h3>
+<p>因为Github中Github.io用于部署后，就不能将博客资料推送到仓库中，这里有两种方法看用于数据备份，一种是本地磁盘备份，另一种是再建一个仓库来备份博客内容。然后通过git推送到不同仓库的方式实现双备份。</p>
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/06-%E5%8F%8C%E4%BB%93%E5%BA%93%E5%A4%87%E4%BB%BD%E7%A4%BA%E6%84%8F%E5%9B%BE.png" srcset="/img/loading.gif" lazyload class="">
-
-<h3 id="3-5-壁纸图片选择"><a href="#3-5-壁纸图片选择" class="headerlink" title="3.5 壁纸图片选择"></a>3.5 壁纸图片选择</h3><p>众所周知，<strong>博客好不好看，配图占一半</strong>。</p>
+<h3 id="3-5-壁纸图片选择">3.5 壁纸图片选择</h3>
+<p>众所周知，<strong>博客好不好看，配图占一半</strong>。</p>
 <p>这里推荐几个我找配图和生成配图的网站。</p>
 <hr>
 <p><strong>1. 壁纸网站：<a target="_blank" rel="noopener" href="https://wallhaven.cc/">Awesome Wallpapers - wallhaven.cc</a></strong></p>
 <hr>
 <p>网站有很多还不错的壁纸，支持关键词搜索、tag搜索、相似风格查找、排行榜查找等。</p>
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/07-%E5%A3%81%E7%BA%B8%E7%BD%91%E7%AB%99wallhaven%E7%A4%BA%E6%84%8F%E5%9B%BE.png" srcset="/img/loading.gif" lazyload class="" title="07-壁纸网站wallhaven示意图">
-
 <hr>
 <p><strong>2.自定义文字壁纸生成网站：<a target="_blank" rel="noopener" href="https://pearmini.github.io/colorfu/#/">colorfu (pearmini.github.io)</a></strong></p>
 <hr>
 <p>便捷生成各种文字内容的手机和电脑壁纸。强烈推荐！</p>
 <img src="/2024/10/17/%E5%8D%9A%E5%AE%A2-0001-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BAgithub%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/08-colorfu%E7%BD%91%E7%AB%99%E7%A4%BA%E6%84%8F%E5%9B%BE.png" srcset="/img/loading.gif" lazyload class="" title="08-colorfu网站示意图">
-
-<h2 id="4-问题汇总"><a href="#4-问题汇总" class="headerlink" title="4.问题汇总"></a>4.问题汇总</h2><h3 id="4-1-部署报警LF-will-be-replaced-by-CRLF"><a href="#4-1-部署报警LF-will-be-replaced-by-CRLF" class="headerlink" title="4.1 部署报警LF will be replaced by CRLF"></a>4.1 部署报警LF will be replaced by CRLF</h3><p>如果这里出现了下面这样的情况：</p>
+<h3 id="3-6-数学公式插入">3.6 数学公式插入</h3>
+<p>根据fluid主题文档，我这里选择katex方法。</p>
+<p><strong>1.主题配置修改</strong></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post:</span><br>  <span class="hljs-attr">math:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">specific:</span> <span class="hljs-literal">false</span><br>    <span class="hljs-attr">engine:</span> <span class="hljs-string">katex</span><br></code></pre></td></tr></table></figure>
+<p><code>specific</code>: 建议开启。当为 true 时，只有在文章 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">front-matter</a>里指定 <code>math: true</code> 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度。</p>
+<p><strong>2.安装插件</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm uninstall hexo-renderer-marked --save<br>npm install hexo-renderer-markdown-it --save<br>npm install @traptitech/markdown-it-katex --save<br></code></pre></td></tr></table></figure>
+<p><strong>3.站点配置修改</strong></p>
+<p>然后在<strong>站点配置</strong>中添加：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">markdown:</span><br>  <span class="hljs-attr">plugins:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;@traptitech/markdown-it-katex&quot;</span><br></code></pre></td></tr></table></figure>
+<h2 id="4-问题汇总">4.问题汇总</h2>
+<h3 id="4-1-部署报警LF-will-be-replaced-by-CRLF">4.1 部署报警LF will be replaced by CRLF</h3>
+<p>如果这里出现了下面这样的情况：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">warning: LF will be replaced by CRLF <span class="hljs-keyword">in</span><br></code></pre></td></tr></table></figure>
-
 <p>直接执行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global core.safecrlf <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure>
-
-<h3 id="4-2-部署到云服务器而非Github"><a href="#4-2-部署到云服务器而非Github" class="headerlink" title="4.2 部署到云服务器而非Github"></a>4.2 部署到云服务器而非Github</h3><p>如果你自己购买了阿里云或者腾讯云等云服务器，希望将博客部署到私人服务器而非Github。</p>
+<h3 id="4-2-部署到云服务器而非Github">4.2 部署到云服务器而非Github</h3>
+<p>如果你自己购买了阿里云或者腾讯云等云服务器，希望将博客部署到私人服务器而非Github。</p>
 <p>在云服务器已经部署了git仓库的条件下，需要做如下修改：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>    <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>    <span class="hljs-attr">repo:</span> <span class="hljs-string">root@(IP):/home/git/hexoBlog</span>	<span class="hljs-comment"># 这个写你云服务器的git仓库路径</span><br>    <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span>                        <span class="hljs-comment"># 这个写你分支的名字</span><br></code></pre></td></tr></table></figure>
 

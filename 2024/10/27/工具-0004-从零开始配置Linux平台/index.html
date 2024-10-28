@@ -19,12 +19,12 @@
   <meta name="author" content="jdhuang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="从零开始配置Linux平台0.概述一步步搭建一套属于自己的Linux系统环境。 0.1 Linux介绍Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。 Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。 Linux 能运行主">
+    <meta name="description" content="从零开始配置Linux平台 0.概述 一步步搭建一套属于自己的Linux系统环境。 0.1 Linux介绍 Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。 Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。 Linux 能">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从零开始配置Linux平台">
 <meta property="og:url" content="https://hjiande.github.io/2024/10/27/%E5%B7%A5%E5%85%B7-0004-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AELinux%E5%B9%B3%E5%8F%B0/index.html">
 <meta property="og:site_name" content="Virtual Void">
-<meta property="og:description" content="从零开始配置Linux平台0.概述一步步搭建一套属于自己的Linux系统环境。 0.1 Linux介绍Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。 Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。 Linux 能运行主">
+<meta property="og:description" content="从零开始配置Linux平台 0.概述 一步步搭建一套属于自己的Linux系统环境。 0.1 Linux介绍 Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。 Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。 Linux 能">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://hjiande.github.io/img/Linux_banner_img.png">
 <meta property="article:published_time" content="2024-10-27T09:35:12.000Z">
@@ -279,28 +279,34 @@
             
               <div class="markdown-body">
                 
-                <h1 id="从零开始配置Linux平台"><a href="#从零开始配置Linux平台" class="headerlink" title="从零开始配置Linux平台"></a>从零开始配置Linux平台</h1><h2 id="0-概述"><a href="#0-概述" class="headerlink" title="0.概述"></a>0.概述</h2><p>一步步搭建一套属于自己的Linux系统环境。</p>
-<h3 id="0-1-Linux介绍"><a href="#0-1-Linux介绍" class="headerlink" title="0.1 Linux介绍"></a>0.1 Linux介绍</h3><p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
+                <h1>从零开始配置Linux平台</h1>
+<h2 id="0-概述">0.概述</h2>
+<p>一步步搭建一套属于自己的Linux系统环境。</p>
+<h3 id="0-1-Linux介绍">0.1 Linux介绍</h3>
+<p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
 <p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
 <p>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
 <p><strong>目前市面上较知名的发行版有：Ubuntu、RedHat、CentOS、Debian、Fedora、SuSE、OpenSUSE、Arch Linux、SolusOS 等。</strong></p>
 <img src="/2024/10/27/%E5%B7%A5%E5%85%B7-0004-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AELinux%E5%B9%B3%E5%8F%B0/01-Linux%E5%8F%91%E8%A1%8C%E7%89%88%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg" srcset="/img/loading.gif" lazyload class="" title="常用Linux发行版操作系统大盘点 - 知乎">
-
 <hr>
 <p>在企业平台，目前我接触的最多的是<a target="_blank" rel="noopener" href="https://www.centos.org/">CentOS</a>，在PC平台，目前我接触最多的是<a target="_blank" rel="noopener" href="https://cn.ubuntu.com/">Ubuntu</a>。</p>
 <hr>
 <p>如果你想使用Linux，目前有两种方法：</p>
 <ol>
-<li><p><strong>你有一台专用物理机，你可以在上面安装Linux系统。</strong></p>
+<li>
+<p><strong>你有一台专用物理机，你可以在上面安装Linux系统。</strong></p>
 </li>
-<li><p><strong>你有一台装有Window系统的物理机，你可以在上面通过<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/wsl/install">WSL</a>功能安装Linux子系统。</strong></p>
+<li>
+<p><strong>你有一台装有Window系统的物理机，你可以在上面通过<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/wsl/install">WSL</a>功能安装Linux子系统。</strong></p>
 </li>
 </ol>
-<h2 id="1-命令推荐与使用"><a href="#1-命令推荐与使用" class="headerlink" title="1. 命令推荐与使用"></a>1. 命令推荐与使用</h2><h3 id="1-1-htop：系统状态命令"><a href="#1-1-htop：系统状态命令" class="headerlink" title="1.1 htop：系统状态命令"></a>1.1 htop：系统状态命令</h3><h4 id="htop介绍"><a href="#htop介绍" class="headerlink" title="htop介绍"></a>htop介绍</h4><p><a target="_blank" rel="noopener" href="https://htop.dev/">htop</a>是top的升级版,允许用户监视系统上运行的进程及其完整的命令行。</p>
+<h2 id="1-命令推荐与使用">1. 命令推荐与使用</h2>
+<h3 id="1-1-htop：系统状态命令">1.1 htop：系统状态命令</h3>
+<h4 id="htop介绍">htop介绍</h4>
+<p><a target="_blank" rel="noopener" href="https://htop.dev/">htop</a>是top的升级版,允许用户监视系统上运行的进程及其完整的命令行。</p>
 <hr>
 <p>htop命令的官网地址：<a target="_blank" rel="noopener" href="https://htop.dev/">htop - an interactive process viewer</a></p>
 <img src="/2024/10/27/%E5%B7%A5%E5%85%B7-0004-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AELinux%E5%B9%B3%E5%8F%B0/01-htop%E5%91%BD%E4%BB%A4%E7%A4%BA%E6%84%8F%E5%9B%BE.png" srcset="/img/loading.gif" lazyload class="" title="01-htop命令示意图">
-
 <hr>
 <p>通过htop命令，可以实现如下功能：</p>
 <ul>
@@ -309,100 +315,84 @@
 <li>交互式操作：htop 支持使用鼠标和键盘进行交互，可以方便地进行排序、过滤和查找等操作。</li>
 <li>功能丰富：htop 提供了许多功能，如进程树视图、进程优先级设置和进程终止等。</li>
 </ul>
-<h4 id="htop安装"><a href="#htop安装" class="headerlink" title="htop安装"></a>htop安装</h4><p><strong>CentOS</strong></p>
+<h4 id="htop安装">htop安装</h4>
+<p><strong>CentOS</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo yum install htop<br></code></pre></td></tr></table></figure>
-
 <p><strong>Ubuntu</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt-get install htop<br></code></pre></td></tr></table></figure>
-
-<h4 id="htop使用"><a href="#htop使用" class="headerlink" title="htop使用"></a>htop使用</h4><p>安装完成后，您可以通过在终端中输入 <code>htop</code> 命令来启动 htop。</p>
+<h4 id="htop使用">htop使用</h4>
+<p>安装完成后，您可以通过在终端中输入 <code>htop</code> 命令来启动 htop。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">htop<br></code></pre></td></tr></table></figure>
-
 <img src="/2024/10/27/%E5%B7%A5%E5%85%B7-0004-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AELinux%E5%B9%B3%E5%8F%B0/02-Htop%E5%91%BD%E4%BB%A4%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg" srcset="/img/loading.gif" lazyload class="" title="02-Htop命令示意图">
-
-<h3 id="1-2-conda-python环境管理工具"><a href="#1-2-conda-python环境管理工具" class="headerlink" title="1.2 conda: python环境管理工具"></a>1.2 conda: python环境管理工具</h3><h4 id="conda-Anaconda介绍"><a href="#conda-Anaconda介绍" class="headerlink" title="conda&#x2F;Anaconda介绍"></a>conda&#x2F;Anaconda介绍</h4><p>Anaconda 是专门为了方便使用 Python 进行数据科学研究而建立的一组软件包，涵盖了数据科学领域常见的 Python 库，并且自带了专门用来解决软件环境依赖问题的 conda 包管理系统。</p>
-<p>Anaconda 主要是提供了包管理与环境管理的功能，可以很方便地解决多版本python并存、切换以及各种第三方包安装问题。Anaconda利用工具&#x2F;命令conda来进行package和environment的管理，并且已经包含了Python和相关的配套工具。</p>
+<h3 id="1-2-conda-python环境管理工具">1.2 conda: python环境管理工具</h3>
+<h4 id="conda-Anaconda介绍">conda/Anaconda介绍</h4>
+<p>Anaconda 是专门为了方便使用 Python 进行数据科学研究而建立的一组软件包，涵盖了数据科学领域常见的 Python 库，并且自带了专门用来解决软件环境依赖问题的 conda 包管理系统。</p>
+<p>Anaconda 主要是提供了包管理与环境管理的功能，可以很方便地解决多版本python并存、切换以及各种第三方包安装问题。Anaconda利用工具/命令conda来进行package和environment的管理，并且已经包含了Python和相关的配套工具。</p>
 <p>conda可以理解为一个工具，也是一个可执行命令，其核心功能是包管理与环境管理。包管理与pip的使用类似，环境管理则允许用户方便地安装不同版本的python并可以快速切换。</p>
 <p>Anaconda则是一个打包的集合，里面预装好了conda、某个版本的python、众多packages、科学计算工具等等，所以也称为Python的一种发行版。其实还有Miniconda，它只包含最基本的内容——python与conda，以及相关的必须依赖项，对于空间要求严格的用户，Miniconda是一种选择。</p>
-<h4 id="conda安装"><a href="#conda安装" class="headerlink" title="conda安装"></a>conda安装</h4><hr>
+<h4 id="conda安装">conda安装</h4>
+<hr>
 <p>下载网址：<a target="_blank" rel="noopener" href="https://anaconda.org/anaconda/conda">Conda | Anaconda.org</a></p>
 <hr>
 <p>根据自身情况，选择下载Window、Linux和MacOS的版本。按照提示安装即可。</p>
-<h4 id="conda使用"><a href="#conda使用" class="headerlink" title="conda使用"></a>conda使用</h4><p><strong>创建一个名为 “myenv” 的新环境:</strong></p>
+<h4 id="conda使用">conda使用</h4>
+<p><strong>创建一个名为 “myenv” 的新环境:</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda create --name myenv<br></code></pre></td></tr></table></figure>
-
 <p><strong>创建指定版本的环境</strong>：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda create --name myenv python=3.8<br></code></pre></td></tr></table></figure>
-
 <p>以上代码创建一个名为 “myenv” 的新环境，并指定 Python 版本为 3.8。</p>
 <p><strong>激活环境：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda activate myenv<br></code></pre></td></tr></table></figure>
-
 <p>以上代码激活名为 “myenv” 的环境。</p>
 <p><strong>要退出当前环境使用以下命令：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">deactivate<br></code></pre></td></tr></table></figure>
-
 <p><strong>查看所有环境：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda env list<br></code></pre></td></tr></table></figure>
-
 <p>以上代码查看所有已创建的环境。</p>
 <p><strong>复制环境：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda create --name myclone --clone myenv<br></code></pre></td></tr></table></figure>
-
 <p>以上代码通过克隆已有环境创建新环境。</p>
 <p><strong>删除环境：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda env remove --name myenv<br></code></pre></td></tr></table></figure>
-
 <p>以上代码删除名为 “myenv” 的环境。</p>
 <p><strong>安装包：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda install package_name<br></code></pre></td></tr></table></figure>
-
 <p>以上代码安装名为 “package_name” 的软件包。</p>
 <p><strong>安装指定版本的包：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda install package_name=1.2.3<br></code></pre></td></tr></table></figure>
-
 <p>以上代码安装 “package_name” 的指定版本。</p>
 <p><strong>更新包：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda update package_name<br></code></pre></td></tr></table></figure>
-
 <p>以上代码更新已安装的软件包。</p>
 <p><strong>卸载包：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda remove package_name<br></code></pre></td></tr></table></figure>
-
 <p>以上代码卸载已安装的软件包。</p>
 <p><strong>查看已安装的包：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda list<br></code></pre></td></tr></table></figure>
-
 <p>查看当前环境下已安装的所有软件包及其版本。</p>
 <p><strong>查看帮助：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda --help<br></code></pre></td></tr></table></figure>
-
 <p>以上代码获取 conda 命令的帮助信息。</p>
 <p><strong>查看 conda 版本：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda --version<br></code></pre></td></tr></table></figure>
-
 <p>以上代码查看安装的 conda 版本。</p>
 <p><strong>搜索包：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda search package_name<br></code></pre></td></tr></table></figure>
-
 <p>以上代码在 conda 仓库中搜索指定的软件包。</p>
 <p><strong>清理不再需要的包：</strong></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda clean --all<br></code></pre></td></tr></table></figure>
-
 <p>以上代码清理 conda 缓存，删除不再需要的软件包。</p>
-<h4 id="conda源替换"><a href="#conda源替换" class="headerlink" title="conda源替换"></a>conda源替换</h4><p>国内网络问题，有时候需要将conda源替换为清华镜像。</p>
+<h4 id="conda源替换">conda源替换</h4>
+<p>国内网络问题，有时候需要将conda源替换为清华镜像。</p>
 <p><strong>Linux环境</strong></p>
 <p>将.condarc替换为如下内容：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs shell">channels:<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/<br>  - defaults<br>show_channel_urls: true<br></code></pre></td></tr></table></figure>
-
 <p>替换后运行如下命令：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda clean -i<br>conda config --show<br></code></pre></td></tr></table></figure>
-
 <p>正常输出即替换成功。</p>
 <p><strong>Window环境</strong></p>
 <p>先执行生成<code>.condarc</code>：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs she'">conda config --set show_channel_urls yes<br></code></pre></td></tr></table></figure>
-
 <p>后重复Linux相关操作即可。</p>
 
                 
@@ -500,8 +490,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/10/18/%E5%B7%A5%E5%85%B7-0003-GREAT-PVT%E7%B2%BE%E5%AF%86%E5%AE%9A%E4%BD%8D%E5%AF%BC%E8%88%AA%E8%BD%AF%E4%BB%B6/" title="GREAT-PVT:武汉大学GREAT团队精密定位导航软件">
-                        <span class="hidden-mobile">GREAT-PVT:武汉大学GREAT团队精密定位导航软件</span>
+                      <a href="/2024/10/27/%E7%A7%91%E7%A0%94-0001-%E7%94%B5%E7%A6%BB%E5%B1%82ROTI%E8%AE%A1%E7%AE%97%E4%B8%8E%E4%BD%BF%E7%94%A8/" title="电离层ROTI计算与使用">
+                        <span class="hidden-mobile">电离层ROTI计算与使用</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
