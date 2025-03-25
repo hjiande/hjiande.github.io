@@ -1,0 +1,703 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon_cat.png">
+  <link rel="icon" href="/img/icon_cat.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="jdhuang">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="ChatGPT在科研中的应用 0. 概述 1. 网站使用 目前，我主要使用的是集成到Bing的Microsoft Copilot: 你的 AI 助手。  1.1 ChatGPT在论文写作中的使用 论文表述参考： example: 1how to desrcible a result of the Quartile in a academic paper answer：  Got it. When">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ChatGPT在科研中的应用">
+<meta property="og:url" content="https://hjiande.github.io/2024/10/30/%E7%A7%91%E7%A0%94-0003-ChatGPT%E5%9C%A8%E7%A7%91%E7%A0%94%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/index.html">
+<meta property="og:site_name" content="Virtual Void">
+<meta property="og:description" content="ChatGPT在科研中的应用 0. 概述 1. 网站使用 目前，我主要使用的是集成到Bing的Microsoft Copilot: 你的 AI 助手。  1.1 ChatGPT在论文写作中的使用 论文表述参考： example: 1how to desrcible a result of the Quartile in a academic paper answer：  Got it. When">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hjiande.github.io/img/dog_banner_img.jpg">
+<meta property="article:published_time" content="2024-10-30T09:35:12.000Z">
+<meta property="article:modified_time" content="2025-03-25T08:53:28.244Z">
+<meta property="article:author" content="jdhuang">
+<meta property="article:tag" content="ChatGPT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hjiande.github.io/img/dog_banner_img.jpg">
+  
+  
+  
+  <title>ChatGPT在科研中的应用 - Virtual Void</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"hjiande.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Virtual Void</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/dog_banner_img.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="ChatGPT在科研中的应用"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-10-30 17:35" pubdate>
+          2024年10月30日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          625 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          6 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">ChatGPT在科研中的应用</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1>ChatGPT在科研中的应用</h1>
+<h2 id="0-概述">0. 概述</h2>
+<h2 id="1-网站使用">1. 网站使用</h2>
+<p>目前，我主要使用的是集成到Bing的<a target="_blank" rel="noopener" href="https://copilot.microsoft.com/?OCID=MA13M2">Microsoft Copilot: 你的 AI 助手</a>。</p>
+<img src="/2024/10/30/%E7%A7%91%E7%A0%94-0003-ChatGPT%E5%9C%A8%E7%A7%91%E7%A0%94%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/1-Copilot%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg" srcset="/img/loading.gif" lazyload class="" title="1-Copilot示意图">
+<h3 id="1-1-ChatGPT在论文写作中的使用">1.1 ChatGPT在论文写作中的使用</h3>
+<h4 id="论文表述参考：">论文表述参考：</h4>
+<p><strong>example:</strong></p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">how to desrcible a result of the Quartile in a academic paper<br></code></pre></td></tr></table></figure>
+<p><strong>answer：</strong></p>
+<hr>
+<p>Got it. When describing quartiles in an academic paper, you’ll want to be clear and precise. Here’s a framework:</p>
+<p><strong>Introduction of Quartiles</strong>: Briefly explain what quartiles are and why they’re being used. For example, “Quartiles divide the dataset into four equal parts, providing insights into the distribution of the data.”</p>
+<p><strong>Description of Q1 (First Quartile)</strong>: Describe what Q1 represents in the context of your data. “The first quartile (Q1) represents the median of the lower half of the data, excluding the median if the number of observations is odd. It indicates that 25% of the data falls below this value.”</p>
+<p><strong>Description of Q2 (Median or Second Quartile)</strong>: Explain that Q2 is the median of the entire dataset. “The second quartile (Q2) or median represents the midpoint of the data, where 50% of the observations are below and 50% are above this value.”</p>
+<p><strong>Description of Q3 (Third Quartile)</strong>: Highlight what Q3 shows. “The third quartile (Q3) represents the median of the upper half of the data. It shows that 75% of the data falls below this value, indicating the threshold for the top 25% of observations.”</p>
+<p><strong>Interquartile Range (IQR)</strong>: Optionally, you can discuss the IQR as a measure of variability. “The interquartile range (IQR), calculated as Q3 minus Q1, provides a measure of the spread of the middle 50% of the data.”</p>
+<p><strong>Conclusion</strong>: Summarize the significance of the quartiles for your specific dataset. “These quartile values help in understanding the data distribution and identifying any potential outliers.”</p>
+<p>Keeping it methodical and structured is key!</p>
+<hr>
+<h4 id="论文翻译参考：">论文翻译参考：</h4>
+<p><strong>example：</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs tex">translate the following sentences to English with academic style:<br>A网位于欧洲，共有 21 个参考站，包含一个7.5 * 4.5的大尺度范围，格网密度为1.5 * 1.5，且处于中纬度附近，无电离层扰动发生。<br></code></pre></td></tr></table></figure>
+<p><strong>answer：</strong></p>
+<hr>
+<p>Network A, located in Europe, comprises 21 reference stations. It covers a large-scale area of 7.5 by 4.5 units, with a grid density of 1.5 by 1.5 units. Situated in mid-latitudes, it is devoid of ionospheric disturbances.</p>
+<hr>
+<h4 id="论文润色参考：">论文润色参考：</h4>
+<p><strong>example：</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs tex">make the sentence more fluent and academic:<br>Network A, located in Europe, comprises 21 reference stations. It covers a large-scale area of 7.5 by 4.5 units, with a grid density of 1.5 by 1.5 units. Situated in mid-latitudes, it is devoid of ionospheric disturbances.<br></code></pre></td></tr></table></figure>
+<p><strong>answer：</strong></p>
+<hr>
+<p>Certainly! Here’s a more fluent and academic version:</p>
+<p>“Network A, situated in Europe, consists of 21 reference stations. It spans an expansive area of 7.5 by 4.5 units, with a grid density of 1.5 by 1.5 units. Located in mid-latitudes, this network experiences an absence of ionospheric disturbances.”</p>
+<p>Hope it sounds better now. Need any more tweaks?</p>
+<hr>
+<h3 id="1-2-ChatGPT在编程中的使用">1.2 ChatGPT在编程中的使用</h3>
+<h4 id="提出需要，要求给模版代码">提出需要，要求给模版代码</h4>
+<p><strong>example：</strong></p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs tex">在matplotlib中，如何将一个float list转换为color list用于scatter颜色<br></code></pre></td></tr></table></figure>
+<p><strong>answer：</strong></p>
+<hr>
+<p>你可以使用 <code>matplotlib</code> 中的 <code>Normalize</code> 和 <code>cm</code> 模块将 float 列表转换为颜色列表，并将其应用于 scatter 图。以下是一个示例代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> matplotlib.cm <span class="hljs-keyword">as</span> cm<br><span class="hljs-keyword">import</span> matplotlib.colors <span class="hljs-keyword">as</span> mcolors<br><br><span class="hljs-comment"># 假设这是你的 float 列表</span><br>float_list = [<span class="hljs-number">0.1</span>, <span class="hljs-number">0.2</span>, <span class="hljs-number">0.3</span>, <span class="hljs-number">0.4</span>, <span class="hljs-number">0.5</span>]<br><br><span class="hljs-comment"># 创建一个 Normalize 对象，将 float 值归一化到 0-1 范围</span><br>norm = mcolors.Normalize(vmin=<span class="hljs-built_in">min</span>(float_list), vmax=<span class="hljs-built_in">max</span>(float_list))<br><br><span class="hljs-comment"># 使用 cm 模块将归一化后的值映射到颜色</span><br>color_list = cm.viridis(norm(float_list))<br><br><span class="hljs-comment"># 创建 scatter 图</span><br>plt.scatter([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], c=color_list)<br>plt.colorbar() <span class="hljs-comment"># 显示颜色条</span><br>plt.show()<br></code></pre></td></tr></table></figure>
+<p>这个示例代码将 <code>float_list</code> 中的值归一化，然后使用 <code>viridis</code> colormap 将其映射为颜色，并在 scatter 图中使用这些颜色。你可以根据需要更改 colormap， <code>viridis</code> 只是其中之一。</p>
+<hr>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs tex">如果想要指定颜色风格，比如设置cmap=&#x27;Spectral<span class="hljs-built_in">_</span>r&#x27;，要修改上面代码哪些部分<br></code></pre></td></tr></table></figure>
+<p><strong>answer：</strong></p>
+<hr>
+<p>要指定颜色风格为 <code>Spectral_r</code>，你只需要在代码中将 <code>viridis</code> 替换为 <code>Spectral_r</code>。以下是更新后的代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt<br><span class="hljs-keyword">import</span> matplotlib.cm <span class="hljs-keyword">as</span> cm<br><span class="hljs-keyword">import</span> matplotlib.colors <span class="hljs-keyword">as</span> mcolors<br><br><span class="hljs-comment"># 假设这是你的 float 列表</span><br>float_list = [<span class="hljs-number">0.1</span>, <span class="hljs-number">0.2</span>, <span class="hljs-number">0.3</span>, <span class="hljs-number">0.4</span>, <span class="hljs-number">0.5</span>]<br><br><span class="hljs-comment"># 创建一个 Normalize 对象，将 float 值归一化到 0-1 范围</span><br>norm = mcolors.Normalize(vmin=<span class="hljs-built_in">min</span>(float_list), vmax=<span class="hljs-built_in">max</span>(float_list))<br><br><span class="hljs-comment"># 使用 cm 模块将归一化后的值映射到颜色，指定 cmap=&#x27;Spectral_r&#x27;</span><br>color_list = cm.Spectral_r(norm(float_list))<br><br><span class="hljs-comment"># 创建 scatter 图</span><br>plt.scatter([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>], c=color_list)<br>plt.colorbar() <span class="hljs-comment"># 显示颜色条</span><br>plt.show()<br><br></code></pre></td></tr></table></figure>
+<p>这样，你就可以使用 <code>Spectral_r</code> 颜色映射来绘制 scatter 图了。</p>
+<hr>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%A7%91%E7%A0%94%E8%AE%B0%E5%BD%95/" class="category-chain-item">科研记录</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/ChatGPT/" class="print-no-link">#ChatGPT</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>ChatGPT在科研中的应用</div>
+      <div>https://hjiande.github.io/2024/10/30/科研-0003-ChatGPT在科研中的应用/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>jdhuang</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年10月30日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/10/30/%E7%A7%91%E7%A0%94-0004-%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3%E5%9B%BE%E7%89%87%E7%BB%98%E5%88%B6/" title="科研相关图片绘制">
+                        <span class="hidden-mobile">科研相关图片绘制</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
