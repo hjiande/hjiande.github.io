@@ -19,16 +19,16 @@
   <meta name="author" content="jdhuang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="C&#x2F;C++编程技巧汇总 概述">
+    <meta name="description" content="编程技巧汇总 概述 1. Doxygen备注快速生成 VSCode用Doxygen自定义代码注释配置 1.安装Doxygen插件  2.设置注释格式 组合键ctrl+shift+p打开命令，输入settings搜索，打开用户setting.json文件，如下图所示：  将下面的配置放入文件中保存即可 1234567891011121314151617181920212223242526272829">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C&#x2F;C++编程技巧汇总">
+<meta property="og:title" content="编程技巧汇总">
 <meta property="og:url" content="https://hjiande.github.io/2024/10/17/%E7%BC%96%E7%A8%8B-0001-%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB/index.html">
 <meta property="og:site_name" content="Virtual Void">
-<meta property="og:description" content="C&#x2F;C++编程技巧汇总 概述">
+<meta property="og:description" content="编程技巧汇总 概述 1. Doxygen备注快速生成 VSCode用Doxygen自定义代码注释配置 1.安装Doxygen插件  2.设置注释格式 组合键ctrl+shift+p打开命令，输入settings搜索，打开用户setting.json文件，如下图所示：  将下面的配置放入文件中保存即可 1234567891011121314151617181920212223242526272829">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://hjiande.github.io/img/C_banner_img.png">
 <meta property="article:published_time" content="2024-10-17T09:35:12.000Z">
-<meta property="article:modified_time" content="2025-03-25T08:53:28.270Z">
+<meta property="article:modified_time" content="2025-03-26T08:46:38.649Z">
 <meta property="article:author" content="jdhuang">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="C&#x2F;C++">
@@ -37,7 +37,7 @@
   
   
   
-  <title>C/C++编程技巧汇总 - Virtual Void</title>
+  <title>编程技巧汇总 - Virtual Void</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="C/C++编程技巧汇总"></span>
+            <span id="subtitle" data-typed-text="编程技巧汇总"></span>
           
         </div>
 
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          10 字
+          692 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          1 分钟
+          6 分钟
         
       </span>
     
@@ -274,13 +274,27 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">C/C++编程技巧汇总</h1>
+            <h1 id="seo-header">编程技巧汇总</h1>
             
             
               <div class="markdown-body">
                 
-                <h1>C/C++编程技巧汇总</h1>
+                <h1>编程技巧汇总</h1>
 <h2 id="概述">概述</h2>
+<h1>1. Doxygen备注快速生成</h1>
+<p>VSCode用Doxygen自定义代码注释配置</p>
+<p><strong>1.安装Doxygen插件</strong></p>
+<img src="/2024/10/17/%E7%BC%96%E7%A8%8B-0001-%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB/01.Doxygen%E6%8F%92%E4%BB%B6.png" srcset="/img/loading.gif" lazyload class="" title="image-20250326163646753">
+<p><strong>2.设置注释格式</strong></p>
+<p>组合键ctrl+shift+p打开命令，输入settings搜索，打开用户setting.json文件，如下图所示：</p>
+<img src="/2024/10/17/%E7%BC%96%E7%A8%8B-0001-%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB/02.VsCode%E7%9A%84%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload class="" title="image-20250326163954848">
+<p>将下面的配置放入文件中保存即可</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-comment">// Doxygen documentation generator set</span><br>    <span class="hljs-attr">&quot;doxdocgen.c.triggerSequence&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;/&quot;</span><span class="hljs-punctuation">,</span>   	<span class="hljs-comment">// 触发自动注释的生成</span><br>    <span class="hljs-attr">&quot;doxdocgen.c.commentPrefix&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot; * &quot;</span><span class="hljs-punctuation">,</span>     <span class="hljs-comment">// 注释行的前缀</span><br>    <span class="hljs-attr">&quot;doxdocgen.c.firstLine&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;/**&quot;</span><span class="hljs-punctuation">,</span>         <span class="hljs-comment">// 注释行的首行</span><br>    <span class="hljs-attr">&quot;doxdocgen.c.lastLine&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;*/&quot;</span><span class="hljs-punctuation">,</span>          	<span class="hljs-comment">// 注释行的尾行</span><br><br>    <span class="hljs-comment">// Smart text snippet for factory methods/functions.</span><br>    <span class="hljs-attr">&quot;doxdocgen.c.factoryMethodText&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Create a &#123;name&#125; object&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// Smart text snippet for getters.</span><br>    <span class="hljs-attr">&quot;doxdocgen.c.getterText&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Get the &#123;name&#125; object&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// Smart text snippet for setters.</span><br>    <span class="hljs-attr">&quot;doxdocgen.c.setterText&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Set the &#123;name&#125; object&quot;</span><span class="hljs-punctuation">,</span><br>     <span class="hljs-comment">// Smart text snippet for constructors.</span><br>     <span class="hljs-attr">&quot;doxdocgen.cpp.ctorText&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Construct a new &#123;name&#125; object&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-comment">// Smart text snippet for destructors.</span><br>    <span class="hljs-attr">&quot;doxdocgen.cpp.dtorText&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Destroy the &#123;name&#125; object&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// The template of the template parameter Doxygen line(s) that are generated. If empty it won&#x27;t get generated at all.</span><br>    <span class="hljs-attr">&quot;doxdocgen.cpp.tparamTemplate&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@tparam &#123;param&#125; &quot;</span><span class="hljs-punctuation">,</span><br><br>    <span class="hljs-comment">// 文件注释：版权信息模板</span><br>    <span class="hljs-attr">&quot;doxdocgen.file.copyrightTag&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-string">&quot;@copyright Copyright (c) &#123;year&#125;  huangjiande&quot;</span><br>    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// 文件注释：自定义模块，这里我添加一个修改日志</span><br>    <span class="hljs-comment">// &quot;doxdocgen.file.customTag&quot;: [</span><br>    <span class="hljs-comment">//     &quot;@par 修改日志:&quot;,</span><br>    <span class="hljs-comment">//     &quot;&lt;table&gt;&quot;,</span><br>    <span class="hljs-comment">//     &quot;&lt;tr&gt;&lt;th&gt;Date       &lt;th&gt;Version &lt;th&gt;Author  &lt;th&gt;Description&quot;,</span><br>    <span class="hljs-comment">//     &quot;&lt;tr&gt;&lt;td&gt;&#123;date&#125; &lt;td&gt;1.0.1     &lt;td&gt;zhoulq     &lt;td&gt;内容&quot;,</span><br>    <span class="hljs-comment">//     &quot;&lt;/table&gt;&quot;,</span><br>    <span class="hljs-comment">// ],</span><br>    <span class="hljs-comment">// 文件注释的组成及其排序</span><br>    <span class="hljs-attr">&quot;doxdocgen.file.fileOrder&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-string">&quot;file&quot;</span><span class="hljs-punctuation">,</span>     <span class="hljs-comment">// @file</span><br>        <span class="hljs-string">&quot;brief&quot;</span><span class="hljs-punctuation">,</span>    <span class="hljs-comment">// @brief 简介</span><br>        <span class="hljs-string">&quot;author&quot;</span><span class="hljs-punctuation">,</span>   <span class="hljs-comment">// 作者</span><br>        <span class="hljs-string">&quot;version&quot;</span><span class="hljs-punctuation">,</span>  <span class="hljs-comment">// 版本</span><br>        <span class="hljs-string">&quot;date&quot;</span><span class="hljs-punctuation">,</span>     <span class="hljs-comment">// 日期</span><br>        <span class="hljs-string">&quot;empty&quot;</span><span class="hljs-punctuation">,</span>    <span class="hljs-comment">// 空行</span><br>        <span class="hljs-string">&quot;copyright&quot;</span><span class="hljs-punctuation">,</span><span class="hljs-comment">// 版权</span><br>        <span class="hljs-string">&quot;empty&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;custom&quot;</span>    <span class="hljs-comment">// 自定义</span><br>    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// 下面时设置上面标签tag的具体信息</span><br>    <span class="hljs-attr">&quot;doxdocgen.file.fileTemplate&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@file &#123;name&#125;&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;doxdocgen.file.versionTag&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@version 1.0.0&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.authorEmail&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;jiande@whu.edu.cn&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.authorName&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;jdhuang&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.authorTag&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@author &#123;author&#125; (&#123;email&#125;)&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">// 日期格式与模板</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.dateFormat&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;YYYY-MM-DD&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.dateTemplate&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@date &#123;date&#125;&quot;</span><span class="hljs-punctuation">,</span><br>    <br>    <span class="hljs-comment">// 根据自动生成的注释模板（目前主要体现在函数注释上）</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.order&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-string">&quot;brief&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;tparam&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;param&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;return&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;author&quot;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-string">&quot;date&quot;</span><br>    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.paramTemplate&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@param&#123;indent:8&#125;&#123;param&#125;&#123;indent:8&#125;&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.returnTemplate&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;@return &#123;type&#125; &quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.splitCasingSmartText&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br><br>    <span class="hljs-attr">&quot;doxdocgen.generic.includeTypeAtReturn&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span>      <span class="hljs-comment">// return 中包含类型信息</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.boolReturnsTrueFalse&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>    <span class="hljs-comment">// bool 返回值拆分成 true 和 false 两种情况</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.linesToGet&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">20</span><span class="hljs-punctuation">,</span>                  <span class="hljs-comment">// 回车后最多向下多少行去找函数声明</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.useGitUserName&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>          <span class="hljs-comment">// &#123;author&#125; 是都根据 git config --get user.name 替换</span><br>    <span class="hljs-attr">&quot;doxdocgen.generic.useGitUserEmail&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>    <span class="hljs-comment">//declarations or definitions anymore.</span><br></code></pre></td></tr></table></figure>
+<p><strong>3.验证效果</strong></p>
+<p>在开发文件中的头部输入/然后回车，效果如下图：</p>
+<img src="/2024/10/17/%E7%BC%96%E7%A8%8B-0001-%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB/04.Doxygen%E6%95%88%E6%9E%9C%E9%AA%8C%E8%AF%81.png" srcset="/img/loading.gif" lazyload class="" title="image-20250326164442622">
+<p>函数上面同样输入/然后回车，效果如下图：</p>
+<img src="/2024/10/17/%E7%BC%96%E7%A8%8B-0001-%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7%E6%B1%87%E6%80%BB/05.Doxygen%E9%AA%8C%E8%AF%81%E6%95%88%E6%9E%9C.png" srcset="/img/loading.gif" lazyload class="" title="image-20250326164557731">
 
                 
               </div>
@@ -328,7 +342,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>C/C++编程技巧汇总</div>
+      <div>编程技巧汇总</div>
       <div>https://hjiande.github.io/2024/10/17/编程-0001-编程技巧汇总/</div>
     </div>
     <div class="license-meta">
