@@ -1,0 +1,779 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon_cat.png">
+  <link rel="icon" href="/img/icon_cat.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="jdhuang">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="从零开始配置Linux平台 0.概述 一步步搭建一套属于自己的Linux系统环境。 0.1 Linux介绍 Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。 Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。 Linux 能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从零开始配置Linux平台">
+<meta property="og:url" content="https://hjiande.github.io/2024/10/27/0004-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AELinux%E5%B9%B3%E5%8F%B0/index.html">
+<meta property="og:site_name" content="Virtual Void">
+<meta property="og:description" content="从零开始配置Linux平台 0.概述 一步步搭建一套属于自己的Linux系统环境。 0.1 Linux介绍 Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。 Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。 Linux 能">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hjiande.github.io/img/Linux_banner_img.png">
+<meta property="article:published_time" content="2024-10-27T09:35:12.000Z">
+<meta property="article:modified_time" content="2025-12-26T04:10:06.434Z">
+<meta property="article:author" content="jdhuang">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hjiande.github.io/img/Linux_banner_img.png">
+  
+  
+  
+  <title>从零开始配置Linux平台 - Virtual Void</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"hjiande.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Virtual Void</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/Linux_banner_img.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="从零开始配置Linux平台"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-10-27 17:35" pubdate>
+          2024年10月27日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.6k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          14 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">从零开始配置Linux平台</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1>从零开始配置Linux平台</h1>
+<h2 id="0-概述">0.概述</h2>
+<p>一步步搭建一套属于自己的Linux系统环境。</p>
+<h3 id="0-1-Linux介绍">0.1 Linux介绍</h3>
+<p>Linux 内核最初只是由芬兰人林纳斯·托瓦兹（Linus Torvalds）在赫尔辛基大学上学时出于个人爱好而编写的。</p>
+<p>Linux 是一套免费使用和自由传播的类 Unix 操作系统，是一个基于 POSIX 和 UNIX 的多用户、多任务、支持多线程和多 CPU 的操作系统。</p>
+<p>Linux 能运行主要的 UNIX 工具软件、应用程序和网络协议。它支持 32 位和 64 位硬件。Linux 继承了 Unix 以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。</p>
+<p><strong>目前市面上较知名的发行版有：Ubuntu、RedHat、CentOS、Debian、Fedora、SuSE、OpenSUSE、Arch Linux、SolusOS 等。</strong></p>
+<p><img src="01-Linux%E5%8F%91%E8%A1%8C%E7%89%88%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg" srcset="/img/loading.gif" lazyload alt="常用Linux发行版操作系统大盘点 - 知乎"></p>
+<hr>
+<p>在企业平台，目前我接触的最多的是<a target="_blank" rel="noopener" href="https://www.centos.org/">CentOS</a>，在PC平台，目前我接触最多的是<a target="_blank" rel="noopener" href="https://cn.ubuntu.com/">Ubuntu</a>。</p>
+<hr>
+<p>如果你想使用Linux，目前有两种方法：</p>
+<ol>
+<li>
+<p><strong>你有一台专用物理机，你可以在上面安装Linux系统。</strong></p>
+</li>
+<li>
+<p><strong>你有一台装有Window系统的物理机，你可以在上面通过<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/wsl/install">WSL</a>功能安装Linux子系统。</strong></p>
+</li>
+</ol>
+<h3 id="0-2-通过WSL安装Linux子系统">0.2 通过WSL安装Linux子系统</h3>
+<p><strong>WSL（Windows Subsystem for Linux）</strong> 是微软为 Windows 用户提供的一个子系统，它允许你在 Windows 上原生运行 Linux（不是虚拟机，不是双系统），直接使用 Bash、apt、gcc、Python、Node.js 等 Linux 工具。目前该工具已在GitHub开源，仓库地址为：<a target="_blank" rel="noopener" href="https://github.com/microsoft/WSL">microsoft/WSL: Windows Subsystem for Linux</a></p>
+<p><img src="%E5%9B%BE%E7%89%87-WSL%E5%BC%80%E6%BA%90%E4%BB%93%E5%BA%93.png" srcset="/img/loading.gif" lazyload alt="图片-WSL开源仓库"></p>
+<h4 id="WSL安装先决条件">WSL安装先决条件</h4>
+<p>必须运行 Windows 10 版本 2004 及更高版本（内部版本 19041 及更高版本）或 Windows 11 才能使用以下命令。 如果使用的是早期版本，请参阅 <a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/wsl/install-manual">手动安装页</a>。</p>
+<h4 id="WSL安装命令">WSL安装命令</h4>
+<p>现在，可以使用单个命令安装运行 WSL 所需的所有内容。 右键单击并选择“以 <strong>管理员</strong> 身份运行”，在管理员模式下打开 PowerShell，输入 wsl --install 命令，然后重新启动计算机。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wsl --install<br></code></pre></td></tr></table></figure>
+<p>该 <code>--install</code> 命令执行以下作：</p>
+<ul>
+<li>启用可选的 WSL 和虚拟机平台组件</li>
+<li>下载并安装最新 Linux 内核</li>
+<li>将 WSL 2 设置为默认值</li>
+<li>下载并安装 Ubuntu Linux 发行版（可能需要重新启动）</li>
+</ul>
+<p>在此安装过程中，你将需要重启计算机。</p>
+<p><img src="%E5%9B%BE%E7%89%87-WSL%E5%AE%89%E8%A3%85%E5%91%BD%E4%BB%A4%E8%A1%8C.png" srcset="/img/loading.gif" lazyload alt="图片-WSL安装命令行"></p>
+<p>安装完成后，后续操作与Linux相同。</p>
+<h2 id="1-命令推荐与使用">1. 命令推荐与使用</h2>
+<h3 id="1-1-htop：系统状态命令">1.1 htop：系统状态命令</h3>
+<h4 id="htop介绍">htop介绍</h4>
+<p><a target="_blank" rel="noopener" href="https://htop.dev/">htop</a>是top的升级版,允许用户监视系统上运行的进程及其完整的命令行。</p>
+<hr>
+<p>htop命令的官网地址：<a target="_blank" rel="noopener" href="https://htop.dev/">htop - an interactive process viewer</a></p>
+<p><img src="01-htop%E5%91%BD%E4%BB%A4%E7%A4%BA%E6%84%8F%E5%9B%BE.png" srcset="/img/loading.gif" lazyload alt="01-htop命令示意图"></p>
+<hr>
+<p>通过htop命令，可以实现如下功能：</p>
+<ul>
+<li>实时监视：htop 实时显示系统资源的使用情况，包括 CPU、内存、磁盘和网络等。</li>
+<li>用户友好的界面：htop 使用彩色和直观的界面展示进程列表和系统信息。</li>
+<li>交互式操作：htop 支持使用鼠标和键盘进行交互，可以方便地进行排序、过滤和查找等操作。</li>
+<li>功能丰富：htop 提供了许多功能，如进程树视图、进程优先级设置和进程终止等。</li>
+</ul>
+<h4 id="htop安装">htop安装</h4>
+<p><strong>CentOS</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo yum install htop<br></code></pre></td></tr></table></figure>
+<p><strong>Ubuntu</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo apt-get install htop<br></code></pre></td></tr></table></figure>
+<h4 id="htop使用">htop使用</h4>
+<p>安装完成后，您可以通过在终端中输入 <code>htop</code> 命令来启动 htop。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">htop<br></code></pre></td></tr></table></figure>
+<p><img src="02-Htop%E5%91%BD%E4%BB%A4%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg" srcset="/img/loading.gif" lazyload alt="02-Htop命令示意图"></p>
+<h3 id="1-2-conda-python环境管理工具">1.2 conda: python环境管理工具</h3>
+<h4 id="conda-Anaconda介绍">conda/Anaconda介绍</h4>
+<p>Anaconda 是专门为了方便使用 Python 进行数据科学研究而建立的一组软件包，涵盖了数据科学领域常见的 Python 库，并且自带了专门用来解决软件环境依赖问题的 conda 包管理系统。</p>
+<p>Anaconda 主要是提供了包管理与环境管理的功能，可以很方便地解决多版本python并存、切换以及各种第三方包安装问题。Anaconda利用工具/命令conda来进行package和environment的管理，并且已经包含了Python和相关的配套工具。</p>
+<p>conda可以理解为一个工具，也是一个可执行命令，其核心功能是包管理与环境管理。包管理与pip的使用类似，环境管理则允许用户方便地安装不同版本的python并可以快速切换。</p>
+<p>Anaconda则是一个打包的集合，里面预装好了conda、某个版本的python、众多packages、科学计算工具等等，所以也称为Python的一种发行版。其实还有Miniconda，它只包含最基本的内容——python与conda，以及相关的必须依赖项，对于空间要求严格的用户，Miniconda是一种选择。</p>
+<h4 id="conda安装">conda安装</h4>
+<hr>
+<p>下载网址：<a target="_blank" rel="noopener" href="https://anaconda.org/anaconda/conda">Conda | Anaconda.org</a></p>
+<hr>
+<p>根据自身情况，选择下载Window、Linux和MacOS的版本。按照提示安装即可。</p>
+<h4 id="conda使用">conda使用</h4>
+<p><strong>创建一个名为 “myenv” 的新环境:</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda create --name myenv<br></code></pre></td></tr></table></figure>
+<p><strong>创建指定版本的环境</strong>：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda create --name myenv python=3.8<br></code></pre></td></tr></table></figure>
+<p>以上代码创建一个名为 “myenv” 的新环境，并指定 Python 版本为 3.8。</p>
+<p><strong>激活环境：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda activate myenv<br></code></pre></td></tr></table></figure>
+<p>以上代码激活名为 “myenv” 的环境。</p>
+<p><strong>要退出当前环境使用以下命令：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">deactivate<br></code></pre></td></tr></table></figure>
+<p><strong>查看所有环境：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda env list<br></code></pre></td></tr></table></figure>
+<p>以上代码查看所有已创建的环境。</p>
+<p><strong>复制环境：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda create --name myclone --clone myenv<br></code></pre></td></tr></table></figure>
+<p>以上代码通过克隆已有环境创建新环境。</p>
+<p><strong>删除环境：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda env remove --name myenv<br></code></pre></td></tr></table></figure>
+<p>以上代码删除名为 “myenv” 的环境。</p>
+<p><strong>安装包：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda install package_name<br></code></pre></td></tr></table></figure>
+<p>以上代码安装名为 “package_name” 的软件包。</p>
+<p><strong>安装指定版本的包：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda install package_name=1.2.3<br></code></pre></td></tr></table></figure>
+<p>以上代码安装 “package_name” 的指定版本。</p>
+<p><strong>更新包：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda update package_name<br></code></pre></td></tr></table></figure>
+<p>以上代码更新已安装的软件包。</p>
+<p><strong>卸载包：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda remove package_name<br></code></pre></td></tr></table></figure>
+<p>以上代码卸载已安装的软件包。</p>
+<p><strong>查看已安装的包：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda list<br></code></pre></td></tr></table></figure>
+<p>查看当前环境下已安装的所有软件包及其版本。</p>
+<p><strong>查看帮助：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda --help<br></code></pre></td></tr></table></figure>
+<p>以上代码获取 conda 命令的帮助信息。</p>
+<p><strong>查看 conda 版本：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda --version<br></code></pre></td></tr></table></figure>
+<p>以上代码查看安装的 conda 版本。</p>
+<p><strong>搜索包：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda search package_name<br></code></pre></td></tr></table></figure>
+<p>以上代码在 conda 仓库中搜索指定的软件包。</p>
+<p><strong>清理不再需要的包：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda clean --all<br></code></pre></td></tr></table></figure>
+<p>以上代码清理 conda 缓存，删除不再需要的软件包。</p>
+<h4 id="conda源替换">conda源替换</h4>
+<p>国内网络问题，有时候需要将conda源替换为清华镜像。</p>
+<p><strong>Linux环境</strong></p>
+<p>将.condarc替换为如下内容：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs shell">channels:<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/<br>  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/<br>  - defaults<br>show_channel_urls: true<br></code></pre></td></tr></table></figure>
+<p>替换后运行如下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">conda clean -i<br>conda config --show<br></code></pre></td></tr></table></figure>
+<p>正常输出即替换成功。</p>
+<p><strong>Window环境</strong></p>
+<p>先执行生成<code>.condarc</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs she'">conda config --set show_channel_urls yes<br></code></pre></td></tr></table></figure>
+<p>后重复Linux相关操作即可。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/" class="category-chain-item">工具分享</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%B7%A5%E5%85%B7/" class="print-no-link">#工具</a>
+      
+        <a href="/tags/Linux/" class="print-no-link">#Linux</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>从零开始配置Linux平台</div>
+      <div>https://hjiande.github.io/2024/10/27/0004-从零开始配置Linux平台/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>jdhuang</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年10月27日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/10/18/0003-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AEWindow%E5%B9%B3%E5%8F%B0/" title="从零开始配置Window平台">
+                        <span class="hidden-mobile">从零开始配置Window平台</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
